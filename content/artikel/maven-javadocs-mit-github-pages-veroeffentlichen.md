@@ -25,6 +25,7 @@ Wechseln Sie nun auf [diese Seite](https://github.com/settings/applications) und
 
 Dieser Token muss nun in der `settings.xml`-Datei Ihrer Maven-Installation abgelegt werden.
 Öffnen Sie dazu diese Datei, die üblicherweise im Unterordner `.m2` Ihres Nutzerverzeichnisses liegt und tragen Sie folgende Daten ein:
+
 ```markup
 <settings>
 	<servers>
@@ -40,6 +41,7 @@ Dieser Token muss nun in der `settings.xml`-Datei Ihrer Maven-Installation abgel
 ## POM anpassen
 Im letzten Schritt müssen Sie das POM, das die Struktur und wichtige Informationen zu Ihrem Projekt beinhaltet, anpassen.
 Hier finden Sie nun eine Beispielkonfiguration des `Build`-Teils, die Sie an den markierten Stellen bearbeiten sollten:
+
 ```markup
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
