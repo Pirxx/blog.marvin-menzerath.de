@@ -1,0 +1,37 @@
+<div id="sidebar">
+	<div id="sidebar-content" class="inner">
+		<h1 class="blog-title"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+		<h2 class="blog-description">{{ .Site.Params.description }}</h2>
+		<div id="sidebar-links">
+			<div id="sidebar-external">
+				{{ range .Site.Menus.social }}
+					<a target="_blank" href="{{ .URL }}" title="{{ .Name }}"><i class="fa fa-{{ .Identifier }}"></i></a>
+				{{end}}
+				<a target="_blank" href="{{ .Site.BaseURL }}index.xml" title="RSS-Feed"><i class="fa fa-rss"></i></a>
+			</div>
+			<a id="showNav" onclick="showNav()"><i class="fa fa-angle-down"></i> Navigation</a>
+			<a id="hideNav" onclick="hideNav()"><i class="fa fa-angle-up"></i> Navigation</a>
+			<div id="sidebar-internal">
+				<ul>
+					{{ range .Site.Menus.tags }}
+					<li><a href="{{ $.Site.BaseURL }}tag/{{ .Identifier }}/" title="{{ .Name }}"><i class="fa fa-tag"></i> {{ .Name }}</a></li>
+					{{end}}
+				</ul>
+				<ul>
+					{{ range .Site.Menus.code }}
+					<li><a target="_blank" href="{{ .URL }}" title="{{ .Name }}"><i class="fa fa-code"></i> {{ .Name }}</a></li>
+					{{end}}
+				</ul>
+				<ul>
+					{{ range .Site.Menus.external }}
+					<li><a target="_blank" href="{{ .URL }}" title="{{ .Name }}"><i class="fa fa-link"></i> {{ .Name }}</a></li>
+					{{end}}
+				</ul>
+			</div>
+		</div>
+		<footer class="site-footer">
+			<section id="copyright">&copy; 2011-{{ .Now.Year }} {{ .Site.Params.author }}</section>
+			<section id="impress"><a href="{{ .Site.BaseURL }}datenschutzerklaerung/">Datenschutzerklärung</a> | <a href="{{ .Site.BaseURL }}impressum/">Impressum</a></section>
+		</footer>
+	</div>
+</div>

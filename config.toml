@@ -1,0 +1,98 @@
+baseurl         = "https://menzerath.eu/"
+languageCode    = "de-DE"
+title           = "Marvin Menzerath"
+theme           = "marvinmenzerath"
+canonifyUrls    = true
+disqusShortname = "marvinm"
+
+[params]
+	description = "Tutorials & Reviews zur Technikwelt"
+	author      = "Marvin Menzerath"
+	homeTitle   = "Home - Letzte Artikel"
+
+[taxonomies]
+	tag = "tag"
+
+[blackfriday]
+	plainIdAnchors = true
+	extensions     = ["hardLineBreak"]
+
+[[menu.social]]
+	name       = "Facebook"
+	identifier = "facebook"
+	url        = "https://facebook.com/menzerath.eu"
+	weight     = 1
+[[menu.social]]
+	name       = "Twitter"
+	identifier = "twitter"
+	url        = "https://twitter.com/MarvinMenzerath"
+	weight     = 2
+[[menu.social]]
+	name       = "GitHub"
+	identifier = "github"
+	url        = "https://github.com/MarvinMenzerath"
+	weight     = 3
+[[menu.social]]
+	name       = "Keybase"
+	identifier = "key"
+	url        = "https://keybase.io/marvinm"
+	weight     = 4
+
+[[menu.tags]]
+	name       = "Android"
+	identifier = "android"
+	weight     = 1
+[[menu.tags]]
+	name       = "Java"
+	identifier = "java"
+	weight     = 2
+[[menu.tags]]
+	name       = "Linux"
+	identifier = "linux"
+	weight     = 3
+[[menu.tags]]
+	name       = "News"
+	identifier = "news"
+	weight     = 4
+[[menu.tags]]
+	name       = "Raspberry Pi"
+	identifier = "raspberry-pi"
+	weight     = 5
+[[menu.tags]]
+	name       = "Review"
+	identifier = "review"
+	weight     = 6
+[[menu.tags]]
+	name       = "Software"
+	identifier = "software"
+	weight     = 7
+[[menu.tags]]
+	name       = "Webmaster"
+	identifier = "webmaster"
+	weight     = 8
+[[menu.tags]]
+	name       = "Windows"
+	identifier = "windows"
+	weight     = 9
+
+[[menu.code]]
+	name       = "Weitere Projekte"
+	url        = "https://marvin-menzerath.de/#projects"
+	weight     = 1
+
+[[menu.external]]
+	name       = "BlackPhantom.DE"
+	url        = "https://blackphantom.de"
+	weight     = 1
+[[menu.external]]
+	name       = "Ratgeber-Forum"
+	url        = "http://ratgeber---forum.de"
+	weight     = 2
+[[menu.external]]
+	name       = "Th3f.DE"
+	url        = "https://th3f.de"
+	weight     = 3
+[[menu.external]]
+	name       = "Patricks Blog"
+	url        = "https://patrick246.de"
+	weight     = 4
