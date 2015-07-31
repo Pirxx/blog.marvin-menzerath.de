@@ -2,7 +2,7 @@
 title       = "Debian 7 \"Wheezy\" veröffentlicht"
 description = "Die 7. Debian-Version \"Wheezy\" bietet neben vielen aktualisierten Softwarepaketen auch eine erweiterte Unterstützung verschiedener Architekturen."
 date        = "2013-05-05T14:14:00"
-tag         = ["Änderungen", "Debian", "Linux", "News"]
+tag         = ["Changelog", "Debian", "Linux", "News"]
 +++
 
 Nach einigen Monaten Entwicklungszeit wurde heute die 7. Version des kostenfreien Betriebssystem Debian vorgestellt. Diese trägt den Codenamen "Wheezy" und bietet neben vielen aktualisierten Softwarepaketen auch eine erweiterte Unterstützung verschiedener Architekturen.

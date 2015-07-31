@@ -2,7 +2,7 @@
 title       = "Android 4.4 KitKat: Alle Änderungen für Anwender und Entwickler"
 description = "Google hat Android 4.4 \"KitKat\" vorgestellt. Dieses Update bringt sowohl für Andwender und Entwickler einige Neuerungen mit, die ich Ihnen hier vorstelle."
 date        = "2013-11-01T13:35:00"
-tag         = ["Änderungen", "Android"]
+tag         = ["Android", "Changelog"]
 +++
 
 Am 31. Oktober hat Google zusammen mit dem **Nexus 5** die **Android Version 4.4 "KitKat"** vorgestellt. Diese bringt sowohl für Andwender wie auch für Entwickler einige Neuerungen mit, die ich Ihnen hier vorstellen werde.

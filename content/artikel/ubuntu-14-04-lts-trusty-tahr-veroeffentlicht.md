@@ -2,7 +2,7 @@
 title       = "Ubuntu 14.04 LTS \"Trusty Tahr\" veröffentlicht"
 description = "Heute wurde die LTS Version 14.04 von Ubuntu \"Trusty Tahr\" veröffentlicht, die einige Änderungen mitbringt und auf Langzeitunterstützung ausgelegt ist."
 date        = "2014-04-17T22:04:00"
-tag         = ["Änderungen", "Linux", "News", "Ubuntu"]
+tag         = ["Changelog", "Linux", "News", "Ubuntu"]
 +++
 
 Heute wurde die LTS Version 14.04 von Ubuntu "Trusty Tahr" von Canonical veröffentlicht, die einige Änderungen mit sich bringt und auf Langzeitunterstützung ausgelegt ist.
