@@ -14,7 +14,7 @@ Die rechtlichen Grundlagen des Datenschutzes finden sich im Bundesdatenschutzges
 ## Zugriffsdaten / Server-Logfiles
 Der Anbieter (beziehungsweise sein Webspace-Provider) erhebt Daten über jeden Zugriff auf das Angebot (so genannte Serverlogfiles). Zu den Zugriffsdaten gehören:
 
-Name der abgerufenen Webseite, Datei, Datum und Uhrzeit des Abrufs, übertragene Datenmenge, Meldung über erfolgreichen Abruf, Browsertyp nebst Version, das Betriebssystem des Nutzers, Referrer URL (die zuvor besuchte Seite), IP-Adresse (ohne die letzten drei Bits) und der anfragende Provider.
+Name der abgerufenen Webseite, Datei, Datum und Uhrzeit des Abrufs, übertragene Datenmenge, Meldung über erfolgreichen Abruf, Browsertyp nebst Version, das Betriebssystem des Nutzers, Referrer URL (die zuvor besuchte Seite), IP-Adresse und der anfragende Provider.
 
 Der Anbieter verwendet die Protokolldaten nur für statistische Auswertungen zum Zweck des Betriebs, der Sicherheit und der Optimierung des Angebotes. Der Anbieterbehält sich jedoch vor, die Protokolldaten nachträglich zu überprüfen, wenn aufgrund konkreter Anhaltspunkte der berechtigte Verdacht einer rechtswidrigen Nutzung besteht.
 
@@ -27,7 +27,15 @@ Personenbezogene Daten werden von dem Anbieter nur dann erhoben, genutzt und wei
 Bei der Kontaktaufnahme mit dem Anbieter (zum Beispiel per Kontaktformular oder E-Mail) werden die Angaben des Nutzers zwecks Bearbeitung der Anfrage sowie für den Fall, dass Anschlussfragen entstehen, gespeichert.
 
 ## Kommentare und Beiträge
-Wenn Nutzer Kommentare im Blog oder sonstige Beiträge hinterlassen, werden ihre IP-Adressen (ohne die letzten drei Bits) gespeichert. Das erfolgt zur Sicherheit des Anbieters, falls jemand in Kommentaren und Beiträgen widerrechtliche Inhalte schreibt (Beleidigungen, verbotene politische Propaganda, etc.). In diesem Fall kann der Anbieter selbst für den Kommentar oder Beitrag belangt werden und ist daher an der Identität des Verfassers interessiert.
+Wenn Nutzer Kommentare im Blog oder sonstige Beiträge hinterlassen, werden ihre IP-Adressen gespeichert. Das erfolgt zur Sicherheit des Anbieters, falls jemand in Kommentaren und Beiträgen widerrechtliche Inhalte schreibt (Beleidigungen, verbotene politische Propaganda, etc.). In diesem Fall kann der Anbieter selbst für den Kommentar oder Beitrag belangt werden und ist daher an der Identität des Verfassers interessiert.
+
+### Disqus
+Die Disqus-Kommentierungsfunktion wird von der Big Head Labs, Inc., San Francisco/USA als Dienstleistung zur Verfügung gestellt. Disqus ist ein interaktives Kommentarsystem, das es dem Nutzer ermöglicht, mit nur einer Anmeldung auf allen Internetangeboten, die Disqus als Kommentarsystem verwenden, zu kommentieren. Außerdem können sich die Nutzer über bestehende Accounts bei Facebook (über Facebook Connect), Twitter, Yahoo und OpenID anmelden. Auch die Erstellung von Kommentare ohne Registrierung und Anmeldung (als "Gast") ist möglich. Nähere Informationen zu Disqus und seinen Funktionen finden Sie unter www.disqus.com.
+
+Ihre Daten werden Disqus verarbeitet und auf Systemen von Disqus gespeichert. Für die Erhebung, Verarbeitung und Nutzung der betreffenden Daten gelten die Nutzungsbedingungen und Datenschutzhinweise von Disqus, zu finden unter https://help.disqus.com/customer/portal/articles/466259-privacy-policy und https://help.disqus.com/customer/portal/articles/466260-terms-of-service. Wenn Sie sich über Ihren Facebook-, Twitter-, Yahoo- oder OpenID-Account anmelden, werden auch von diesen Anbietern möglicherweise Daten erhoben, gespeichert und genutzt.
+Einzelheiten dazu finden sich in den Datenschutzbestimmungen des jeweiligen Anbieters.
+
+Ich behalte mir vor, unangemessene Kommentare oder Kommentar-Spam zu löschen.
 
 ## Einbindung von Diensten und Inhalten Dritter
 Es kann vorkommen, dass innerhalb dieses Onlineangebotes Inhalte Dritter, wie zum Beispiel Videos von YouTube, Kartenmaterial von Google-Maps, RSS-Feeds oder Grafiken von anderen Webseiten eingebunden werden. Dies setzt immer voraus, dass die Anbieter dieser Inhalte (nachfolgend bezeichnet als "Dritt-Anbieter") die IP-Adresse der Nutzer wahr nehmen. Denn ohne die IP-Adresse, könnten sie die Inhalte nicht an den Browser des jeweiligen Nutzers senden. Die IP-Adresse ist damit für die Darstellung dieser Inhalte erforderlich. Wir bemühen uns nur solche Inhalte zu verwenden, deren jeweilige Anbieter die IP-Adresse lediglich zur Auslieferung der Inhalte verwenden. Jedoch haben wir keinen Einfluss darauf, falls die Dritt-Anbieter die IP-Adresse z.B. für statistische Zwecke speichern. Soweit dies uns bekannt ist, klären wir die Nutzer darüber auf.
