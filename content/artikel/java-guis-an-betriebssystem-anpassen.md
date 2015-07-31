@@ -6,10 +6,10 @@ tag         = ["Java", "Programmierung"]
 +++
 
 Manche in Java geschriebenen Programme und Applets beinhalten eine GUI - ein grafisches Benutzerinterface - mit dem das jeweilige Programm bedient werden kann.
-Meistens lassen sich diese Applikationen am immer gleichen und altbackenen Layout erkennen, das zwar auf allen Plattformen gleich aussieht, aber auch eben gleich hässlich.
 
 <!--more-->
 
+Meistens lassen sich diese Applikationen am immer gleichen und altbackenen Layout erkennen, das zwar auf allen Plattformen gleich aussieht, aber auch eben gleich hässlich:
 ![Is My Website Down - Design - Vorher](/images/java-guis-an-betriebssystem-anpassen/Vorher.png)
 
 # Lösung
