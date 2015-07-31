@@ -567,27 +567,7 @@ main {
 }
 
 /* ==========================================================================
-   5. Tag / Author archive
-   ========================================================================== */
-.archive-header {
-	border-bottom: 1px solid #EBF2F6;
-	text-align: left;
-}
-
-.archive-header i {
-	font-size: 80%;
-}
-
-.archive-header-title {
-	margin-left: 1rem;
-}
-
-.archive-header-count {
-	font-size: 20px;
-}
-
-/* ==========================================================================
-   6. Pagination
+   4. Pagination
    ========================================================================== */
 .pagination {
 	color: #9EABB3;
@@ -624,7 +604,7 @@ main {
 }
 
 /* ==========================================================================
-   7. Footer
+   5. Footer
    ========================================================================== */
 .site-footer {
 	color: #e6e9eb;
@@ -643,7 +623,7 @@ main {
 }
 
 /* ==========================================================================
-   8. PrismJS
+   6. PrismJS
    ========================================================================== */
 .token.comment, .token.block-comment, .token.prolog, .token.doctype, .token.cdata {
 	color: #7D8B99;
@@ -700,7 +680,7 @@ main {
 }
 
 /* ==========================================================================
-   9. Media Queries - Width smaller than 1023px
+   7. Media Queries - Width smaller than 1023px
    ========================================================================== */
 @media only screen and (max-width: 1023px) {
 	blockquote {
@@ -759,7 +739,7 @@ main {
 }
 
 /* ==========================================================================
-   10. Media Queries - Width smaller than 500px
+   8. Media Queries - Width smaller than 500px
    ========================================================================== */
 @media only screen and (max-width: 500px) {
 	h1, h2 {
@@ -833,22 +813,6 @@ main {
 		margin: 1.4rem 0.8rem 0 0.8rem;
 	}
 
-	.isso-postbox > .form-wrapper > .auth-section .input-wrapper {
-		display: block;
-		margin: 0 0 .3em;
-		max-width: 100%;
-	}
-
-	.isso-postbox > .form-wrapper > .auth-section .input-wrapper input {
-		width: 100%;
-	}
-
-	.isso-postbox > .form-wrapper > .auth-section .post-action {
-		display: block;
-		float: none;
-		text-align: right;
-	}
-
 	.older-posts, .newer-posts {
 		margin: 10px 0;
 		position: static;
@@ -860,7 +824,7 @@ main {
 }
 
 /* ==========================================================================
-   11. Media Queries - Height smaller than 650px
+   9. Media Queries - Height smaller than 650px
    ========================================================================== */
 @media only screen and (max-height: 650px) {
 	#sidebar-internal {
