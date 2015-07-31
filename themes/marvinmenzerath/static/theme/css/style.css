@@ -554,6 +554,10 @@ main {
 	padding: 0.6em 0;
 }
 
+.post-edit {
+	border-bottom: #EBF2F6 1px solid;
+}
+
 .post-ad {
 	margin: 1rem 0;
 }
