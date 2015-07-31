@@ -1,4 +1,4 @@
-# menzerath.eu
+# menzerath.eu [![Build Status](https://drone.io/github.com/MarvinMenzerath/menzerath.eu/status.png)](https://drone.io/github.com/MarvinMenzerath/menzerath.eu/latest)
 Mein Technikblog - powered by Hugo. Tutorials & Reviews zur Technikwelt.
 
 ==> **[Klick](https://menzerath.eu)** <==
