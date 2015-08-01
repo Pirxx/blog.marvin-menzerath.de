@@ -1,6 +1,6 @@
 +++
-title       = "Windows 7, 8 und 8.1 kostenfrei Downloaden und Nutzen"
-description = "Microsoft bietet Windows 7, 8 und 8.1 in der Enterprise-Version zum 90-tägigen Test an - und dieser lässt sich einige male um weitere 90 Tage verlängern."
+title       = "Windows 7, 8, 8.1 und 10 kostenfrei Downloaden und Nutzen"
+description = "Microsoft bietet Windows 7, 8, 8.1 und 10 in der Enterprise-Version zum 90-tägigen Test an - und dieser lässt sich einige male um weitere 90 Tage verlängern."
 date        = "2013-11-30T12:33:00"
 tag         = ["Kostenfrei", "Windows"]
 +++
@@ -26,10 +26,15 @@ Alle Downloads liegen im iso-Format vor und können mit einem entsprechenden Pro
 * Windows 7 - nicht mehr (offiziell) verfügbar[*]
 * Windows 8 - nicht mehr (offiziell) verfügbar[*]
 * Windows 8.1
-	- x86 (32Bit): [Download](http://care.dlservice.microsoft.com/dl/download/1/B/E/1BEDF444-0504-4694-A738-4005AAD16887/9600.16384.WINBLUE_RTM.130821-1623_X86FRE_ENTERPRISE_EVAL_DE-DE-IRM_CENA_X86FREE_DE-DE_DV5.ISO)
-	- x64 (64Bit): [Download](http://care.dlservice.microsoft.com/dl/download/1/B/E/1BEDF444-0504-4694-A738-4005AAD16887/9600.16384.WINBLUE_RTM.130821-1623_X64FRE_ENTERPRISE_EVAL_DE-DE-IRM_CENA_X64FREE_DE-DE_DV5.ISO)
+	- x86: [Download](http://care.dlservice.microsoft.com/dl/download/1/B/E/1BEDF444-0504-4694-A738-4005AAD16887/9600.16384.WINBLUE_RTM.130821-1623_X86FRE_ENTERPRISE_EVAL_DE-DE-IRM_CENA_X86FREE_DE-DE_DV5.ISO)
+	- x64: [Download](http://care.dlservice.microsoft.com/dl/download/1/B/E/1BEDF444-0504-4694-A738-4005AAD16887/9600.16384.WINBLUE_RTM.130821-1623_X64FRE_ENTERPRISE_EVAL_DE-DE-IRM_CENA_X64FREE_DE-DE_DV5.ISO)
+* Windows 10
+ 	- x86: [Download](http://care.dlservice.microsoft.com/dl/download/7/4/0/7402E0B6-F74B-428D-A720-A5C0BEB36A12/10240.16384.150709-1700.TH1_CLIENTENTERPRISEEVAL_OEMRET_X86FRE_DE-DE.ISO)
+ 	- x64: [Download](http://care.dlservice.microsoft.com/dl/download/7/4/0/7402E0B6-F74B-428D-A720-A5C0BEB36A12/10240.16384.150709-1700.TH1_CLIENTENTERPRISEEVAL_OEMRET_X64FRE_DE-DE.ISO)
 
 [*] Diese Datei können Sie mit Hilfe einer Google-Suche finden. Die Aktivierung kann jedoch nicht (immer) problemlos ausgeführt werden.
+
+Eine Übersichtsseite mit allen verfügbaren Evaluierungsversionen finden Sie [hier](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise).
 
 ## Fazit
 Dank dieser simplen, aber genialen Methode können Sie Ihre VMs über ein Jahr lang ohne Neuinstallation nutzen oder neue Windows-Versionen ausführlich testen.
