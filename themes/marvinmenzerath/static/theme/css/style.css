@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,700|Source+Code+Pro);
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
 
 /* ==========================================================================
@@ -199,7 +199,7 @@ html {
 
 body {
 	color: #3A4145;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1.8rem;
 	height: 100%;
 	line-height: 1.6em;
@@ -212,14 +212,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 4rem;
-	letter-spacing: -2px;
-	line-height: 1.2em;
+	font-size: 3.8rem;
+	letter-spacing: -1px;
 	text-indent: -3px;
 }
 
 h2 {
-	font-size: 3.5rem;
+	font-size: 3.25rem;
 	letter-spacing: -1px;
 	line-height: 1.2em;
 	text-indent: -2px;
@@ -311,7 +310,7 @@ code, pre {
 	background: #FDFDFD;
 	color: #222;
 	direction: ltr;
-	font-family: Consolas, Monaco, monospace, sans-serif;
+	font-family: 'Source Code Pro', Consolas, Monaco, monospace, sans-serif;
 	hyphens: none;
 	line-height: 1.5;
 	tab-size: 4;
@@ -321,7 +320,7 @@ code, pre {
 
 code {
 	border: .1em solid #DFDFDF;
-	font-size: 0.85em;
+	font-size: .85em;
 	padding: .1em .3em;
 }
 
@@ -330,7 +329,7 @@ pre {
 	background-origin: content-box;
 	background-size: 3em 3em;
 	border-left: .5em solid #358CCB;
-	font-size: 0.9em;
+	font-size: .85em;
 	margin: .5em 0;
 	outline: .1em solid #DFDFDF;
 	overflow: auto;
@@ -405,6 +404,7 @@ table.plain tbody > tr:nth-child(odd) > td, table.plain tbody > tr:nth-child(odd
 .blog-title {
 	font-size: 3.5rem;
 	font-weight: bold;
+	letter-spacing: 0;
 	margin: 10px 0 0 0;
 	text-align: center;
 	text-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
