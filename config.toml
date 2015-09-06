@@ -80,19 +80,7 @@ disqusShortname = "marvinm"
 	url        = "https://marvin-menzerath.de/#projects"
 	weight     = 1
 
-[[menu.external]]
-	name       = "BlackPhantom.DE"
-	url        = "https://blackphantom.de"
+[[menu.sites]]
+	name       = "Blogroll"
+	identifier = "blogroll"
 	weight     = 1
-[[menu.external]]
-	name       = "Ratgeber-Forum"
-	url        = "http://ratgeber---forum.de"
-	weight     = 2
-[[menu.external]]
-	name       = "Th3f.DE"
-	url        = "https://th3f.de"
-	weight     = 3
-[[menu.external]]
-	name       = "Patricks Blog"
-	url        = "https://patrick246.de"
-	weight     = 4

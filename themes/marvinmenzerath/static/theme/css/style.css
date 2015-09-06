@@ -482,7 +482,7 @@ main {
 	background-color: #22313F;
 	height: 100%;
 	left: 0;
-	overflow-y: auto;
+	overflow-y: overlay;
 	position: fixed;
 	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 	top: 0;
@@ -824,9 +824,9 @@ main {
 }
 
 /* ==========================================================================
-   9. Media Queries - Height smaller than 650px
+   9. Media Queries - Height smaller than 550px
    ========================================================================== */
-@media only screen and (max-height: 650px) {
+@media only screen and (max-height: 550px) {
 	#sidebar-internal {
 		display: none;
 	}
