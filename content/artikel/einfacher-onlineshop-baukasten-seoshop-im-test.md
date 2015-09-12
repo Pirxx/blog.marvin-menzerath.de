@@ -2,7 +2,7 @@
 title       = "Einfacher Onlineshop Baukasten SEOshop im Test"
 description = "Wie schlägt sich der umfangreiche Onlineshop Baukasten von SEOshop im Hinblick auf Funktionen, Design und Usability?"
 date        = "2014-02-11T21:54:00"
-tag         = ["Review"]
+tag         = ["Review", "Werbung"]
 +++
 
 Mit dem Onlineshop Baukasten von SEOshop soll es ganz einfach sein, Produkte im Internet zu verkaufen und die Abläufe hinter einem Verkauf zu vereinfachen. Aber wie schlägt sich SEOshop im Hinblick auf Funktionen, Design und Usability?

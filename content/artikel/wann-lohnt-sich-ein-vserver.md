@@ -2,7 +2,7 @@
 title = "Wann lohnt sich der Umstieg auf einen vServer?"
 description = "In diesem Artikel versuche ich die Frage zu klären, bei welchen Anforderungen sich ein vServer lohnt und was man dabei beachten sollte."
 date = "2015-08-25T14:10:00"
-tag = ["Hosting", "Server", "Webmaster"]
+tag = ["Hosting", "Server", "Webmaster", "Werbung"]
 +++
 
 Ein leistungsstarker Server ist bei der Umsetzung verschiedenster Web-Projekte [von zentraler Bedeutung](http://www.selbstaendig-im-netz.de/2013/06/12/firmenwebsite/braucht-man-einen-server-fuer-die-eigene-website/). Viele User nutzen gewöhnliche Hosting-Pakete, aber abhängig vom individuellen Einsatzbereich kann der Umstieg auf einen vServer die bessere Alternative darstellen.

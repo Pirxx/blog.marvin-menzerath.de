@@ -2,7 +2,7 @@
 title       = "Eigener Wordpress-Blog: Voraussetzungen, Installation & Einrichtung"
 description = "Hier erfahren Sie, wie einfach es ist mit Wordpress einen eigenen Blog mit eigenen Themes und Plugins zu starten und zu konfigurieren."
 date        = "2013-09-23T18:33:00"
-tag         = ["CMS", "Hosting", "Webmaster", "Wordpress"]
+tag         = ["CMS", "Hosting", "Webmaster", "Werbung", "Wordpress"]
 +++
 
 Mit dem kostenfreien Open-Source CMS Wordpress ist es sehr einfach, einen eigenen Blog zu starten. Doch bei der Installation und anschließenden Einrichtung gibt es einige Dinge zu beachten. Hier erfahren Sie, wie einfach Sie selbst einen Wordpress-Blog starten können.
