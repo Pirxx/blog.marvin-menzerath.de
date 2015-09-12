@@ -6,9 +6,10 @@ canonifyUrls    = true
 disqusShortname = "marvinm"
 
 [params]
-	description = "Tutorials & Reviews zur Technikwelt"
 	author      = "Marvin Menzerath"
+	description = "Tutorials & Reviews zur Technikwelt"
 	homeTitle   = "Home - Letzte Artikel"
+	githubRepo  = "https://github.com/MarvinMenzerath/menzerath.eu/"
 
 [taxonomies]
 	tag = "tag"
@@ -81,6 +82,6 @@ disqusShortname = "marvinm"
 	weight     = 1
 
 [[menu.sites]]
-	name       = "Blogroll"
+	name       = "Blogroll & Partner"
 	identifier = "blogroll"
 	weight     = 1

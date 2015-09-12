@@ -1,6 +1,6 @@
 <section class="post-edit">
 	<h6>Fehler gefunden? Verbesserungsvorschlag?</h6>
-	<p><i class="fa fa-pencil"></i> <a href="https://github.com/MarvinMenzerath/menzerath.eu/edit/master/content{{ substr .RelPermalink 0 -1 }}.md" target="_blank">Artikel bearbeiten</a>
+	<p><i class="fa fa-pencil"></i> <a href="{{ .Site.Params.githubRepo }}edit/master/content{{ substr .RelPermalink 0 -1 }}.md" target="_blank">Artikel bearbeiten</a>
 	&nbsp;&nbsp; oder &nbsp;&nbsp;
-	<i class="fa fa-bug"></i> <a href="https://github.com/MarvinMenzerath/menzerath.eu/issues/new?title=Fehler%20in%20Artikel%20&quot;{{ .Title }}&quot;&body=URL&#58;%20{{ .Permalink }}" target="_blank">Fehler melden</a></p>
+	<i class="fa fa-bug"></i> <a href="{{ .Site.Params.githubRepo }}issues/new?title=Fehler%20in%20Artikel%20&quot;{{ .Title }}&quot;&body=URL&#58;%20{{ .Permalink }}" target="_blank">Fehler melden</a></p>
 </section>
