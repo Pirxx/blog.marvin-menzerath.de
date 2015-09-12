@@ -41,3 +41,11 @@ _paq.push(['enableLinkTracking']);
 
 /* Werbung */
 (adsbygoogle = window.adsbygoogle || []).push({});
+
+/* AdBlock-Schreck */
+$(window).load(function() {
+	if (!$(".adsbygoogle").height()) {
+		$("body").css("font-family", "Comic Sans MS");
+		$("#adblock-notice").show();
+	}
+});
