@@ -46,6 +46,6 @@ _paq.push(['enableLinkTracking']);
 $(window).load(function() {
 	if (!$(".adsbygoogle").height()) {
 		$("body").css("font-family", "Comic Sans MS");
-		$("#adblock-notice").show();
+		$("#notice").show();
 	}
 });
