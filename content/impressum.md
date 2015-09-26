@@ -30,4 +30,4 @@ Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unt
 
 Quelle: [eRecht24](http://www.e-recht24.de/)
 
-Dieses Seite ist gültig für `menzerath.eu` und `marvin-menzerath.de`.
+Diese Seite ist gültig für `menzerath.eu` und `marvin-menzerath.de`.

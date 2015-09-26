@@ -61,4 +61,4 @@ Der Nutzer hat das Recht, auf Antrag unentgeltlich Auskunft zu erhalten über di
 
 Quelle: [Datenschutz-Muster von Rechtsanwalt Thomas Schwenke - I LAW it](http://rechtsanwalt-schwenke.de/smmr-buch/datenschutz-muster-generator-fuer-webseiten-blogs-und-social-media/)
 
-Dieses Seite ist gültig für `menzerath.eu` und `marvin-menzerath.de`, wobei je nach Angebot nicht alle Aspekte zutreffend sind.
+Diese Seite ist gültig für `menzerath.eu` und `marvin-menzerath.de`, wobei je nach Angebot nicht alle Aspekte zutreffend sind.
