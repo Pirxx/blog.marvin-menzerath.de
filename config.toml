@@ -6,9 +6,11 @@ canonifyUrls    = true
 disqusShortname = "marvinm"
 
 [params]
-	author      = "Marvin Menzerath"
-	description = "Tutorials & Reviews zur Technikwelt"
 	homeTitle   = "Home - Letzte Artikel"
+	description = "Tutorials & Reviews zur Technikwelt"
+	author      = "Marvin Menzerath"
+	impress     = "https://marvin-menzerath.de/impressum.html"
+	datenschutz = "https://marvin-menzerath.de/datenschutzerklaerung.html"
 	githubRepo  = "https://github.com/MarvinMenzerath/menzerath.eu/"
 
 [taxonomies]
