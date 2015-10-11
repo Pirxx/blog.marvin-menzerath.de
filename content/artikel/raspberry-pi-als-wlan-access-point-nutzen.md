@@ -10,7 +10,7 @@ Um möglichst überall im Haus mit WLAN versorgt zu sein, bedarf es meistens ei
 <!--more-->
 
 ## Voraussetzungen
-Natürlich benötigen Sie zuerst einen Raspberry Pi mit Netzteil, SD-Karte (mit installiertem Raspbian) und ein LAN-Kabel. Außerdem benötigen Sie einen [WLAN-Stick/-Dongle](http://www.amazon.de/CSL-Antennenbuchse-abnehmbarer-besonders-Reichweite-Schwarz/dp/B007K871ES), den Sie schon [für weniger als 10€](http://www.amazon.de/Raspberry-inkl-automatische-Netzeinbindung-Windows/dp/B00A8BWSKG) bei Amazon kaufen können.
+Natürlich benötigen Sie zuerst einen Raspberry Pi mit Netzteil, SD-Karte (mit installiertem Raspbian) und ein LAN-Kabel. Außerdem benötigen Sie einen [WLAN-Stick/-Dongle](http://www.amazon.de/Raspberry-inkl-automatische-Netzeinbindung-Windows/dp/B00A8BWSKG), den Sie schon für weniger als 10€ bei Amazon kaufen können.
 Bedenken Sie bei der Wahl der Position des Raspberry Pis, dass dieser möglichst viel Raum mit WLAN abdecken soll und platzieren Sie diesen daher möglichst zentral.
 
 ## Installation & Einrichtung
