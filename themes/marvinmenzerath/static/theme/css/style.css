@@ -400,12 +400,6 @@ main {
 	text-align: center;
 }
 
-#notice {
-	color: #FFFF00;
-	display: none;
-	padding-bottom: .5em;
-}
-
 /* ==========================================================================
    4. Post
    ========================================================================== */
@@ -674,7 +668,7 @@ main {
 /* ==========================================================================
    10. Media Queries - Height smaller than 600px
    ========================================================================== */
-@media only screen and (max-height: 600px) {
+@media only screen and (max-height: 580px) {
 	#sidebar-internal {
 		display: none;
 	}

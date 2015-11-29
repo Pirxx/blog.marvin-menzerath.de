@@ -43,21 +43,12 @@ _paq.push(['enableLinkTracking']);
 	g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
 })();
 
-/* AdBlock-Schreck */
-function detectAdblock() {
-	if (!$(".adsbygoogle").height()) {
-		$("body").css("font-family", "Comic Sans MS");
-		$("#notice").show();
-	}
-}
-
 /* Seite fertig geladen */
 InstantClick.on('change', function() {
 	Prism.highlightAll();
 	$(".post-content").fitVids();
 
 	(adsbygoogle = window.adsbygoogle || []).push({});
-	detectAdblock();
 
 	_paq.push(['setCustomUrl', window.location.href]);
 	_paq.push(['setDocumentTitle', document.title]);
