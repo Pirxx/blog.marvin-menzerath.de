@@ -445,7 +445,7 @@ main {
 }
 
 /* ==========================================================================
-   6. PrismJS
+   6. PrismJS | http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+bash+batch+go+java+php+python+sql
    ========================================================================== */
 .token.comment, .token.block-comment, .token.prolog, .token.doctype, .token.cdata {
 	color: #7D8B99;
@@ -455,7 +455,7 @@ main {
 	color: #5F6364;
 }
 
-.token.property, .token.tag, .token.boolean, .token.number, .token.function-name, .token.constant, .token.symbol, .token.deleted {
+.token.property, .token.tag, .token.boolean, .token.number,.token.function-name, .token.constant, .token.symbol, .token.deleted {
 	color: #c92c2c;
 }
 
