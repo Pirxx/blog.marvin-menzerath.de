@@ -43,9 +43,6 @@ _paq.push(['enableLinkTracking']);
 	g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
 })();
 
-/* Werbung */
-(adsbygoogle = window.adsbygoogle || []).push({});
-
 /* AdBlock-Schreck */
 function detectAdblock() {
 	if (!$(".adsbygoogle").height()) {
@@ -55,7 +52,14 @@ function detectAdblock() {
 }
 
 /* Seite fertig geladen */
-$(document).load(function() {
+InstantClick.on('change', function() {
+	Prism.highlightAll();
 	$(".post-content").fitVids();
+
+	(adsbygoogle = window.adsbygoogle || []).push({});
 	detectAdblock();
+
+	_paq.push(['setCustomUrl', window.location.href]);
+	_paq.push(['setDocumentTitle', document.title]);
+	_paq.push(['trackPageView']);
 });
