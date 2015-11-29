@@ -8,8 +8,7 @@
                 <h1 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
                 <div class="post-meta">
                     <i class="fa fa-calendar"></i> <time datetime="{{ .Date.Format "2006-01-02" }}" class="fulldate">{{ .Date.Format "02. January 2006" }}</time>&nbsp;&nbsp;
-                    <i class="fa fa-tag"></i> {{ range $i, $e := .Params.tag }}{{ if $i }}, {{ end }}<a href="{{ $.Site.BaseURL }}tag/{{ . | urlize }}">{{ . }}</a>{{ end }}&nbsp;
-                    <i class="fa fa-comment"></i> <a href="{{ .Permalink }}#disqus_thread" data-disqus-identifier="{{ .RelPermalink }}">Kommentare</a>
+                    <i class="fa fa-tag"></i> {{ range $i, $e := .Params.tag }}{{ if $i }}, {{ end }}<a href="{{ $.Site.BaseURL }}tag/{{ . | urlize }}">{{ . }}</a>{{ end }}
                 </div>
             </header>
             <section class="post-excerpt">

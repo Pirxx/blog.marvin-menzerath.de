@@ -3,7 +3,6 @@ languageCode    = "de-DE"
 title           = "Marvin Menzerath"
 theme           = "marvinmenzerath"
 canonifyUrls    = true
-disqusShortname = "marvinm"
 
 [params]
 	homeTitle   = "Home - Letzte Artikel"
