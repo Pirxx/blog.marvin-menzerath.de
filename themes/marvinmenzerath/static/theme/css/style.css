@@ -798,25 +798,6 @@ main {
 		width: 15px;
 	}
 
-	.post-footer {
-		padding: 4rem 0 2rem 0;
-	}
-
-	.post-footer .author {
-		border-bottom: #EBF2F6 1px dashed;
-		margin: 0 0 2rem 0;
-		padding: 0 0 1.6rem 0;
-	}
-
-	.post-footer .share {
-		position: static;
-		width: auto;
-	}
-
-	.post-footer .share a {
-		margin: 1.4rem 0.8rem 0 0.8rem;
-	}
-
 	.older-posts, .newer-posts {
 		margin: 10px 0;
 		position: static;
