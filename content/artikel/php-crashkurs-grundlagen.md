@@ -104,7 +104,7 @@ In vielen Fällen muss das Skript nach gegebenen Fällen **verschieden handeln**
 <?php
 $var = "Hallo";
 $var2 = true;
- 
+
 if ($var == "Hallo") {
     if ($var2) {
         if ($var3 > 5) {
@@ -211,7 +211,7 @@ In PHP gibt es wie in vielen anderen Programmiersprachen **Funktionen**. Die Mei
 echo "Es geht los...";
 echo sagHallo();
 echo "Ende.";
- 
+
 function sagHallo() {
     return "Guten Tag."
 }
@@ -220,7 +220,7 @@ function sagHallo() {
 
 ### 2.4 – Datenbank
 Bei vielen Anwendungen (wie auch CMS) werden Datenbanken benötigt um dort Daten auszulesen und abzuspeichern. Da ich dieses Thema bereits behandelt habe, schauen Sie sich den entsprechenden Abschnitt einfach [hier](/artikel/mysql-datenbanken-statements-php/) an.
- 
+
 ## 3 – Ein Zufallszahlengenerator
 Abschließend können Sie nun mit Ihrem erworbenen Wissen und einer Funktion, die Zufallszahlen erzeugt Ihr **erstes, kleines Skript schreiben**. Dieses soll Ihre Daten über eine URL im Format `http://adresse.de/script.php?v=0&b=10` erhalten und Zufallszahlen von 0 bis 10 via `echo` ausgeben.
 Die Funktion `int mt_rand (int $min, int $max)` erzeugt bereits die Zufallszahlen, daher müssen Sie nicht mehr viel programmieren.
@@ -230,13 +230,12 @@ Hier also nun das fertige Skript:
 <?php
 $von = intval($_GET['von']);
 $bis = intval($_GET['bis']);
- 
+
 $zahl = mt_rand($von, $bis);
- 
+
 echo "Ihre Zufallszahl lautet: ".$zahl;
 ?>
 ```
 
 ## Fazit
 PHP ist eine **mächtige, aber auch simple und leicht zu erlernende Sprache**, mit der sich sowohl mächtige CMS, aber auch [kleine Spielereien](/minecraft-achievement-generator/) programmieren lassen.
-Sollten Sie weitere Fragen oder Probleme in einzelnen Teilen haben, hinterlassen Sie mir diese einfach in den Kommentaren.

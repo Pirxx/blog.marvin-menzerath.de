@@ -96,7 +96,7 @@ local master = yes
 ;wins server = w.x.y.z
 unix password sync = yes
 passwd program = /usr/bin/passwd %u
- 
+
 [webserver]
 comment = Der Webserver
 path = /var/www
@@ -104,7 +104,7 @@ writeable = yes
 valid users = IhrBenutzername
 force directory mode = 660
 force create mode = 660
- 
+
 [Daten]
 comment = Meine Daten
 path = /home/IhrBenutzername
@@ -125,5 +125,3 @@ eingeben, um den Server neuzustarten, und – sobald der Vorgang abgeschlossen i
 ![Ubuntu Server: Zugriff auf Dateien](/images/ubuntu-server-installieren-und-einrichten/Samba.png)
 
 Im Ordner mit Ihren Daten haben Sie volle Zugriffsrechte und können alle Daten löschen, verändern und auch erstellen. Im Ordner des Webservers können Sie Ihre persönlichen Daten editieren und hineinkopieren, aber vorhandene (oder durch den Server geänderte) Dateien müssen erst wieder Zugriffsrechte bekommen.
-
-**Hier endet dieses Tutorial zur Einrichtung eines Ubuntu-Servers. Sollten Sie weitere Fragen haben, hinterlassen Sie diese einfach in den Kommentaren!**

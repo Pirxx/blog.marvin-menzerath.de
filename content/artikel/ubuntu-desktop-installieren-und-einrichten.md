@@ -26,7 +26,7 @@ Nach der kurzen Installation geht es jetzt direkt mit dem ersten Start des frisc
 ![Ubuntu Installieren und Einrichten: Erster Start](/images/ubuntu-desktop-installieren-und-einrichten/Unity.png)
 
 ### Updates
-Doch bevor es weiter gehen kann, stehen bereits die ersten Updates oder auch eine erweiterte Sprachunterstützung bereit. Ein kleines Fenster meldet sich und bietet diese Aktualisierungen an. Nach einem Klick auf "Jetzt Installieren" wird das Passwort verlangt, danach läuft der Prozess eine Zeit lang und muss eventuell den Rechner später Neustarten. 
+Doch bevor es weiter gehen kann, stehen bereits die ersten Updates oder auch eine erweiterte Sprachunterstützung bereit. Ein kleines Fenster meldet sich und bietet diese Aktualisierungen an. Nach einem Klick auf "Jetzt Installieren" wird das Passwort verlangt, danach läuft der Prozess eine Zeit lang und muss eventuell den Rechner später Neustarten.
 ![Ubuntu Installieren und Einrichten: Updates verfügbar](/images/ubuntu-desktop-installieren-und-einrichten/Updates.png)
 
 ### Treiber
@@ -74,7 +74,7 @@ Systemadministratoren könnten auch das Partitionierungstool GParted oder das Pa
 sudo apt-get install gparted synaptic
 ```
 
-Es gibt viele weitere nützliche Programme, die ich hier jedoch nicht alle auflisten kann. Bei Programmwünschen schreiben Sie mir diese einfach in die Kommentare, oder Sie schauen ins Ubuntu Software Center in den verschiedenen Rubriken.
+Es gibt viele weitere nützliche Programme, die ich hier jedoch nicht alle auflisten kann. Die allermeisten Pakete finden Sie im Ubuntu Software Center sortiert in den verschiedenen Rubriken.
 
 ## Zusammenfassung
 Wie Sie hoffentlich bemerkt haben, ist die Installation und Einrichtung sehr einfach und erfordert kein Fachwissen. - Darauf ist Ubuntu auch ausgelegt.

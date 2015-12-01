@@ -16,7 +16,7 @@ Der Autor nennt sich selbst "Franz" und eröffnet seinen netten Brief mit einem 
 Sofort danach werde ich freundlich begrüßt und es wird aus meinem Artikel zitiert:
 
 > "Beachten Sie bitte, dass ich nicht für Ihr Handeln nach diesem Tutorial haftbar gemacht werden kann."
-> 
+>
 > Irtum!
 
 Und ja, der Autor unterliegt hier wirklich einem Irrtum - denn ihm fehlt ein kleines "r".
@@ -74,4 +74,4 @@ Received: from unknown (HELO emkei.cz) (2a01:5e0:36:5001::1e14:cf7b)
 Received: by emkei.cz (Postfix, from userid 33)
 	id 85D5CD5799; Mon, 16 Mar 2015 17:49:30 +0100 (CET)
 ```
-Ich würde gerne weiter mit Dir über das Thema diskutieren - melde Dich doch bitte hier in den Kommentaren oder noch einmal per E-Mail.
+Ich würde gerne weiter mit Dir über das Thema diskutieren - melde Dich doch bitte noch einmal per E-Mail.

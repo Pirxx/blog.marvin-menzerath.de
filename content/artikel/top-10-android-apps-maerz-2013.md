@@ -41,6 +41,3 @@ Das einzige Spiel in diesem Ranking ist [Springfield](https://play.google.com/st
 
 ### Platz 1: ZDFheute
 Seit wenigen Tagen ist die [ZDFheute](https://play.google.com/store/apps/details?id=de.heute.mobile) App (kostenfrei) im Play Store erhältlich – und Sie ist momentan die beste Nachrichten App. Das Design ist zeitgemäß und entspricht den Design Guidelines von Google. Außerdem lassen lassen sich aktuelle Eilmeldungen direkt als Benachrichtigung senden.
-
-## Abschluss
-Das waren meine Top 10 Android Apps aus dem Monat März 2013. Möchten Sie mehr von diesen Rankings sehen und was sind Ihre Lieblingsapps? Bitte hinterlassen Sie Ihre Antworten in den Kommentaren.

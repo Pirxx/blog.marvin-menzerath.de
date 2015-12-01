@@ -9,9 +9,7 @@ In diesem Artikel lernen Sie einfache Batch-Befehle und -Skripte kennen und erfa
 
 <!--more-->
 
-## Einstieg
-Auf den Wunsch einer bestimmten Person (ich hoffe, sie fühlt sich angesprochen) hier eine kleine Übersicht möglicher Befehle für eine Batch-Datei. Sollten diese Person oder Sie noch Fragen haben, einfach hier in den Kommentaren posten!
-
+## Erste Skripts
 Einfaches Skript, das den Rechner nach Drücken einer Taste herunterfährt:
 ```
 @echo off

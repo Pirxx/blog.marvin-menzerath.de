@@ -48,6 +48,3 @@ Neben meinen gerade vorgestellten Top 10 Apps sollte jedes Smartphone (je nach N
 1. Die **Messenger**: WhatsApp, Threema, Facebook, Hangouts, (G)Mail
 2. Die **sozialen Netzwerke**: Facebook, Twitter, Google Plus
 3. **Surfen & Medien**:  Chrome Browser, Play Music, VLC Media Player
-
-## Fazit
-Das waren meine wichtigsten Apps für den Alltag. Aber welche sind Ihre? Oder besitzen Sie überhaupt kein Smartphone? Lassen Sie es mich in den Kommentaren wissen!

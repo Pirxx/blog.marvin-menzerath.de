@@ -51,7 +51,7 @@ Die anzuzeigenden Dateien liegen im Ordner `/var/www` und können nur mit Root-R
 nano /var/www/index.html
 ```
 
-Die Konfigurationsdateien des Webservers finden Sie unter `/etc/apache2` wobei dort normalerweise keine Änderungen nötig sind. Sollten Sie dennoch spezielle Fragen dazu haben, schreiben Sie diese einfach in die Kommentare.
+Die Konfigurationsdateien des Webservers finden Sie unter `/etc/apache2` wobei dort normalerweise keine Änderungen nötig sind.
 
 ## PHP
 
@@ -62,7 +62,7 @@ apt-get install php5
 ```
 
 ### Konfiguration
-Um die korrekte Installation zu testen, legen Sie einfach eine Datei wie `/var/www/test.php` an und geben Sie folgenden Text ein: 
+Um die korrekte Installation zu testen, legen Sie einfach eine Datei wie `/var/www/test.php` an und geben Sie folgenden Text ein:
 ```php
 <?php
     phpinfo();

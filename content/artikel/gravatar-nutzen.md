@@ -16,7 +16,7 @@ Nun müssen Sie noch die Jugendfreigabe für Ihren Avatar einschätzen. Wegen di
 Weiterhin können Sie mehrere E-Mail Adressen nutzen und diesen auch andere Avatare zuweisen.
 ![Gravatar: Website](/images/gravatar-nutzen/Webseite.png)
 
-Wenn Sie nun einen Kommentar auf einer unterstützen Website (wie dieser hier) hinterlassen, wird nicht der Standard-Avatar neben Ihrem Kommentar angezeigt, sondern der zur angegebenen E-Mail Adresse gehörende Avatar.
+Wenn Sie nun einen Kommentar auf einer unterstützen Website hinterlassen, wird nicht der Standard-Avatar neben Ihrem Kommentar angezeigt, sondern der zur angegebenen E-Mail Adresse gehörende Avatar.
 
 ## Wie baue ich Gravatar in meine Website ein?
 Sollten Sie ein CMS nutzen, gibt es meist schon fertige Plugins oder Scripte, die Ihnen die Arbeit abnehemen. Daher sehen Sie nachfolgend eine Liste der drei bekanntesten CMS mit einem Link zu Ihren jeweiligen Gravatar-Plugins:
@@ -36,10 +36,10 @@ $email = "someone@somewhere.com";
 $default = "http://www.somewhere.com/homestar.jpg";
 // Die Größe des Avatars (Länge x Breite in Pixeln)
 $size = 40;
- 
+
 // Die Gravatar-URL "zusammenbauen"
 $grav_url = "http://www.gravatar.com/avatar/".md5(strtolower(trim($email)))."?d=".urlencode($default)."&s=".$size;
- 
+
 // Und schließlich den Gravatar anzeigen lassen
 <img src="<?php echo $grav_url; ?>" alt="" />
 ?>
