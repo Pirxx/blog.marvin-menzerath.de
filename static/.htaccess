@@ -8,5 +8,7 @@ RewriteRule (.*) https://menzerath.eu/$1 [R=301,L]
 
 ErrorDocument 404 /404.html
 
+Redirect 301 /feed/ /index.xml
 Redirect 301 /feed /index.xml
+Redirect 301 /rss/ /index.xml
 Redirect 301 /rss /index.xml
