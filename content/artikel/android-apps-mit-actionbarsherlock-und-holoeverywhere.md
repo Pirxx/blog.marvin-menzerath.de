@@ -46,7 +46,9 @@ Wenn Sie nun Ihre App starten, haben Sie eine schwarze Leiste am oberen Bildschi
 ```java
 ActionBar bar = getSupportActionBar();
 ```
+
 * Die Elemente (-> Buttons/Menüs) in der ActionBar können Sie wie das native Menü ansprechen:
+
 ```java
 @Override
 public boolean onCreateOptionsMenu(Menu menu) {
@@ -55,7 +57,7 @@ public boolean onCreateOptionsMenu(Menu menu) {
     .setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
     return true;
 }
- 
+
 @Override
 public boolean onOptionsItemSelected(MenuItem item) {
     if (item.getItemId() == 1) {
@@ -64,6 +66,7 @@ public boolean onOptionsItemSelected(MenuItem item) {
     return true;
 }
 ```
+
 * Somit haben Sie jetzt einen Menüpunkt in der ActionBar, der (wenn genug Platz ist) mit "Über" bezeichnet wird und das Icon "myIcon" nutzt.
 * Weitere Möglichkeiten dort Menüpunkte zu Platzieren, finden Sie leicht über Google oder eine andere Suchmaschine.
 
