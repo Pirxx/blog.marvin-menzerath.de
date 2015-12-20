@@ -4,6 +4,6 @@ tags = ["blog"]
 min_version = 0.1
 
 [author]
-    name = "Marvin Menzerath"
-    twitter = "https://twitter.com/MarvinMenzerath"
-    url = "https://github.com/MarvinMenzerath"
+	name = "Marvin Menzerath"
+	twitter = "https://twitter.com/MarvinMenzerath"
+	url = "https://github.com/MarvinMenzerath"
