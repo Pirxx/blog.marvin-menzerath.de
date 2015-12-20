@@ -304,7 +304,7 @@ table.plain tbody > tr:nth-child(odd) > td, table.plain tbody > tr:nth-child(odd
 .post {
 	border-bottom: #EBF2F6 1px solid;
 	hyphens: auto;
-	padding: 20px 0;
+	padding: 2rem 0;
 	position: relative;
 }
 
@@ -434,9 +434,7 @@ main {
 }
 
 .post-ad {
-	border-bottom: #EBF2F6 1px solid;
-	margin-bottom: 1rem;
-	padding: 1rem 0;
+	padding: 2rem 0 0 0;
 }
 
 /* ==========================================================================
