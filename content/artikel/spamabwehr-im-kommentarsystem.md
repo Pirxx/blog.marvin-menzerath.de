@@ -27,23 +27,23 @@ Folgendermaßen könnte das nun auf Ihrer Website aussehen:
 #### Formular
 ```markup
 <form action="artikel.php" method="post">
-    <p><label for="author">Name (notwendig)</label>
-    <input type="text" name="author" /></p>
-    <p ><label for="email">E-Mail (notwendig)</label>
-    <input type="text" name="email" /></p>
-    <p ><label for="comment">Kommentar (notwendig)</label>
-    <textarea name="comment"></textarea>
-    <textarea name="comment-verify" style="display:none" ></textarea></p>
-    <p><input name="submit" type="submit" value="Abschicken" /></p>
+	<p><label for="author">Name (notwendig)</label>
+	<input type="text" name="author" /></p>
+	<p ><label for="email">E-Mail (notwendig)</label>
+	<input type="text" name="email" /></p>
+	<p ><label for="comment">Kommentar (notwendig)</label>
+	<textarea name="comment"></textarea>
+	<textarea name="comment-verify" style="display:none" ></textarea></p>
+	<p><input name="submit" type="submit" value="Abschicken" /></p>
 </form>
 ```
 
 #### PHP-Code
 ```php
 if ($_POST['comment-verify'] == "") {
-    // Es ist kein Spam: In Datenbank eintragen
+	// Es ist kein Spam: In Datenbank eintragen
 } else {
-    // Eventuell speichern; bessser: verwerfen
+	// Eventuell speichern; bessser: verwerfen
 }
 ```
 

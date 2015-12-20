@@ -45,77 +45,77 @@ Hier finden Sie nun eine Beispielkonfiguration des `Build`-Teils, die Sie an den
 ```markup
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <artifactId>maven-site-plugin</artifactId>
-                    <version>3.4</version>
-                </plugin>
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-site-plugin</artifactId>
+					<version>3.4</version>
+				</plugin>
 
-                <plugin>
-                    <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>2.10.1</version>
-                </plugin>
+				<plugin>
+					<artifactId>maven-javadoc-plugin</artifactId>
+					<version>2.10.1</version>
+				</plugin>
 
-                <plugin>
-                    <artifactId>maven-scm-publish-plugin</artifactId>
-                    <version>1.1</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
+				<plugin>
+					<artifactId>maven-scm-publish-plugin</artifactId>
+					<version>1.1</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
 
-        <plugins>
-            <!-- Verhindert, dass eine Maven-Site generiert wird -->
-            <plugin>
-                <artifactId>maven-site-plugin</artifactId>
-                <configuration>
-                    <skip>true</skip>
-                    <skipDeploy>true</skipDeploy>
-                </configuration>
-            </plugin>
+		<plugins>
+			<!-- Verhindert, dass eine Maven-Site generiert wird -->
+			<plugin>
+				<artifactId>maven-site-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+					<skipDeploy>true</skipDeploy>
+				</configuration>
+			</plugin>
 
-            <!-- Generiert die Javadocs in das Verzeichnis "target/apidocs", sobald das Goal "site" ausgeführt wird -->
-            <plugin>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <configuration>
-                    <outputDirectory>${project.build.directory}/apidocs</outputDirectory>
-                    <reportOutputDirectory>${project.build.directory}</reportOutputDirectory>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>javadoc</goal>
-                        </goals>
-                        <phase>site</phase>
-                    </execution>
-                </executions>
-            </plugin>
+			<!-- Generiert die Javadocs in das Verzeichnis "target/apidocs", sobald das Goal "site" ausgeführt wird -->
+			<plugin>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<configuration>
+					<outputDirectory>${project.build.directory}/apidocs</outputDirectory>
+					<reportOutputDirectory>${project.build.directory}</reportOutputDirectory>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>javadoc</goal>
+						</goals>
+						<phase>site</phase>
+					</execution>
+				</executions>
+			</plugin>
 
-            <!-- Pusht die Javadocs in das Repository, sobald das Goal "site" ausgeführt wird -->
-            <plugin>
-                <artifactId>maven-scm-publish-plugin</artifactId>
-                <configuration>
-                    <serverId>github</serverId>
-                    <!-- URL zum Repository anpassen! -->
-                    <pubScmUrl>scm:git:https://github.com/MarvinMenzerath/IsMyWebsiteDown.git</pubScmUrl>
-                    <scmBranch>gh-pages</scmBranch>
-                    <checkinComment>Updated JavaDocs via Maven</checkinComment>
-                    <content>${project.build.directory}/apidocs</content>
-                    <siteOutputEncoding>UTF-8</siteOutputEncoding>
-                    <tryUpdate>true</tryUpdate>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>publish-scm</goal>
-                        </goals>
-                        <phase>site</phase>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
+			<!-- Pusht die Javadocs in das Repository, sobald das Goal "site" ausgeführt wird -->
+			<plugin>
+				<artifactId>maven-scm-publish-plugin</artifactId>
+				<configuration>
+					<serverId>github</serverId>
+					<!-- URL zum Repository anpassen! -->
+					<pubScmUrl>scm:git:https://github.com/MarvinMenzerath/IsMyWebsiteDown.git</pubScmUrl>
+					<scmBranch>gh-pages</scmBranch>
+					<checkinComment>Updated JavaDocs via Maven</checkinComment>
+					<content>${project.build.directory}/apidocs</content>
+					<siteOutputEncoding>UTF-8</siteOutputEncoding>
+					<tryUpdate>true</tryUpdate>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>publish-scm</goal>
+						</goals>
+						<phase>site</phase>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>
 ```
 

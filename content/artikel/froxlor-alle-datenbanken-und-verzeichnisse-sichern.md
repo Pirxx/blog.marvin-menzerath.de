@@ -44,7 +44,7 @@ Hier finden Sie nun das Backup-Skript zum Download, bzw. Kopieren. Den Dropbox-U
 
 ```bash
 # !/bin/bash
- 
+
 ############################
 ### ZUGANGSDATEN & PFADE ###
 ############################
@@ -53,59 +53,59 @@ BACKUP_TO="backups/server"
 UPLOADER_CONFIG="/home/marvin/.dropbox_uploader"
 MYSQL_USER="root"
 MYSQL_PASSWORD="passwort"
- 
+
 ####################
 ### MYSQL-BACKUP ###
 ####################
 echo "Starte Datenbank-Backup..."
- 
+
 databases=`mysql -u $MYSQL_USER -p$MYSQL_PASSWORD -e "SHOW DATABASES;" | grep -Ev "(Database|information_schema|performance_schema|mysql)"`
 for db in $databases; do
-    mysqldump -u $MYSQL_USER -p$MYSQL_PASSWORD $db > "$BACKUP_DIR/DBs/$db.sql"
+	mysqldump -u $MYSQL_USER -p$MYSQL_PASSWORD $db > "$BACKUP_DIR/DBs/$db.sql"
 done
- 
+
 # Alle SQL-Dumps in ein Archiv packen
 tar -zcf $BACKUP_DIR/tmp/backup.tar.gz $BACKUP_DIR/DBs/
- 
+
 # Archiv hochladen
 echo "Lade Datenbank-Backup hoch..."
 $BACKUP_DIR/dropbox_uploader.sh -p -f $UPLOADER_CONFIG upload $BACKUP_DIR/tmp/backup.tar.gz $BACKUP_TO/databases/backup_$(date +"%Y-%m-%d_%H-%M").tar.gz
- 
+
 # Daten des MySQL-Backups löschen
 rm $BACKUP_DIR/DBs/*
 rm $BACKUP_DIR/tmp/backup.tar.gz
 echo "Datenbank-Backup beendet!"
- 
+
 ####################
 ### DATEN-BACKUP ###
 ####################
 echo "Starte Daten-Backup..."
- 
+
 # Lade alle Verzeichnisse
 dirs=( $(find /var/customers/webs/ -maxdepth 1 -type d -printf '%P\n') )
- 
+
 # Alle packen, hochladen und wieder löschen
 for dir in "${dirs[@]}"; do
-        tar -zcf $BACKUP_DIR/tmp/backup.tar.gz /var/customers/webs/$dir
-        $BACKUP_DIR/dropbox_uploader.sh -p -f $UPLOADER_CONFIG upload $BACKUP_DIR/tmp/backup.tar.gz $BACKUP_TO/$dir/backup_$(date +"%Y-%m-%d_%H-%M").tar.gz
-        rm $BACKUP_DIR/tmp/backup.tar.gz
+		tar -zcf $BACKUP_DIR/tmp/backup.tar.gz /var/customers/webs/$dir
+		$BACKUP_DIR/dropbox_uploader.sh -p -f $UPLOADER_CONFIG upload $BACKUP_DIR/tmp/backup.tar.gz $BACKUP_TO/$dir/backup_$(date +"%Y-%m-%d_%H-%M").tar.gz
+		rm $BACKUP_DIR/tmp/backup.tar.gz
 done
- 
+
 ###################
 ### MAIL-BACKUP ###
 ###################
 echo "Starte Mail-Backup..."
- 
+
 # Packe das Mail-Verzeichnis in ein Archiv
 tar -zcf $BACKUP_DIR/tmp/backup.tar.gz /var/customers/mail/
- 
+
 # Archiv hochladen
 echo "Lade Mail-Backup hoch..."
 $BACKUP_DIR/dropbox_uploader.sh -p -f $UPLOADER_CONFIG upload $BACKUP_DIR/tmp/backup.tar.gz $BACKUP_TO/mail/backup_$(date +"%Y-%m-%d_%H-%M").tar.gz
- 
+
 # Daten des Mail-Backup löschen
 rm $BACKUP_DIR/tmp/backup.tar.gz
- 
+
 echo "Backup beendet!"
 ```
 

@@ -27,12 +27,12 @@ ip addr
 In dieser Beispiel-Ausgabe findet sich die IP-Adresse in der letzten Zeile:
 ```
 marvin@RasPi ~ $ ip addr
-1: lo: <LOOPBACK,UP,LOWER_UP> mtu 16436 qdisc noqueue state UNKNOWN 
-    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
-    inet 127.0.0.1/8 scope host lo
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 16436 qdisc noqueue state UNKNOWN
+	link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+	inet 127.0.0.1/8 scope host lo
 2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP qlen 1000
-    link/ether b8:27:eb:ca:a3:89 brd ff:ff:ff:ff:ff:ff
-    inet 192.168.20.74/24 brd 192.168.20.255 scope global eth0
+	link/ether b8:27:eb:ca:a3:89 brd ff:ff:ff:ff:ff:ff
+	inet 192.168.20.74/24 brd 192.168.20.255 scope global eth0
 ```
 
 ### Installation von Git
@@ -47,7 +47,7 @@ Nun können Sie Raspcontrol herunterladen. Wechseln Sie dazu zuerst in das Verze
 cd /var/www
 sudo git clone https://github.com/harmon25/raspcontrol.git
 ```
-Nun befinden sich die Dateien im Unterverzeichnis `raspcontrol` Ihres Webserver-Verzeichnisses. 
+Nun befinden sich die Dateien im Unterverzeichnis `raspcontrol` Ihres Webserver-Verzeichnisses.
 
 #### Einrichtung
 Damit nur Sie sich im Webinterface anmelden können benötigen Sie noch eine Datei mit dem Benutzernamen und dem Passwort. Dazu müssen Sie das Verzeichnis `raspcontrol` im Verzeichnis `/etc` anlegen und dort die Zugangsdatei anlegen und bearbeiten.
@@ -62,8 +62,8 @@ sudo nano database.aptmnt
 Nun müssen Sie die Datei folgendermaßen aufbauen und Ihre gewünschten Daten eintragen:
 ```
 {
-    "user":       "IhrNutzername",
-    "password":   "IhrPasswort"
+	"user":       "IhrNutzername",
+	"password":   "IhrPasswort"
 }
 ```
 

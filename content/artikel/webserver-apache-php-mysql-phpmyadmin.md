@@ -65,7 +65,7 @@ apt-get install php5
 Um die korrekte Installation zu testen, legen Sie einfach eine Datei wie `/var/www/test.php` an und geben Sie folgenden Text ein:
 ```php
 <?php
-    phpinfo();
+	phpinfo();
 ?>
 ```
 

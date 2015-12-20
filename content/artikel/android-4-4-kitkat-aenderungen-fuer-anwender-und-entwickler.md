@@ -45,7 +45,7 @@ Neben den bereits angesprochenen Änderungen gibt es einige weitere, wichtige Di
 Geräte mit weniger "Power" können nun **dank einer neuen API einfach erkannt werden**. Somit können Sie Funktionen deaktivieren oder den RAM-Verbrauch optimieren. Nutzen Sie dazu einfach folgenden Code:
 ```java
 if (ActivityManager.isLowRamDevice()) {
-    // ...
+	// ...
 }
 ```
 

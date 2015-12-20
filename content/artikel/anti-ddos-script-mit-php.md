@@ -40,10 +40,10 @@ $mysqlhost = "DB-Adresse";
 $mysqluser = "DB-User";
 $mysqlpwd = "DB-Passwort";
 $mysqldb = "DB-Name";
- 
+
 $connection=mysql_connect($mysqlhost, $mysqluser, $mysqlpwd) or die ("Verbindung fehlgeschlagen!");
 mysql_select_db($mysqldb, $connection);
- 
+
 //Einmalig DB anlegen
 mysql_query("CREATE TABLE `ddos_blacklist` (`ip` varchar (15) NOT NULL)");
 mysql_query("CREATE TABLE `ddos_temp` (`ip` varchar (15) NOT NULL, `zeit` int NOT NULL, `faktor` int NOT NULL)");
@@ -55,95 +55,95 @@ Nun müssen Sie noch das gesamte Script nach Ihren Wünschen anpassen und an ein
 ```php
 <?php
 /****
-     * Anti-DDoS Script
-     * Version 1.1.1
-     * (c) 2012-2013: Marvin Menzerath
-     * http://menzerath.eu
-     *
+	 * Anti-DDoS Script
+	 * Version 1.1.1
+	 * (c) 2012-2013: Marvin Menzerath
+	 * http://menzerath.eu
+	 *
 ****/
- 
+
 //Einstellungen//
 //DB-Verbindung
 $mysqlhost = "DB-Adresse";
 $mysqluser = "DB-User";
 $mysqlpwd = "DB-Passwort";
 $mysqldb = "DB-Name";
- 
+
 //Einmalig DB anlegen
 //mysql_query("CREATE TABLE `ddos_blacklist` (`ip` varchar (15) NOT NULL)");
 //mysql_query("CREATE TABLE `ddos_temp` (`ip` varchar (15) NOT NULL, `zeit` int NOT NULL, `faktor` int NOT NULL)");
- 
+
 $MaxDiff = 2; //Zeit zwischen zwei Anfragen, bis Faktor um 1 erhöht wird
 $MaxFaktor = 20; //Max. Faktor-Wert
 ///Ende der Einstellungen///
- 
+
 $UserIP = $_SERVER['REMOTE_ADDR']; //UserIP in Variable speichern
 $PHPtime = time(); //Zeit in Variable speichern
- 
+
 //Verbindung zur Datenbank:
 $connection=mysql_connect($mysqlhost, $mysqluser, $mysqlpwd);
 mysql_select_db($mysqldb, $connection);
- 
+
 //IP in BlackList-DB suchen
 $blRequest = "SELECT COUNT(ip) FROM `ddos_blacklist` WHERE `ip` = '$UserIP'";
 $blRequestResult = mysql_query($blRequest);
 $blResult = mysql_fetch_row($blRequestResult);
 $blacklisted = $blResult[0];
- 
+
 //Wenn dort vorhanden: Umleitung
 if ($blacklisted != 0) {
-    header('Location: http://google.com/');
-    exit;
+	header('Location: http://google.com/');
+	exit;
 }
- 
+
 //IP in Temp-DB suchen
 $tdbRequest = "SELECT COUNT(ip) FROM `ddos_temp` WHERE `ip` = '$UserIP'";
 $tdbRequestResult = mysql_query($tdbRequest);
 $tdbResult = mysql_fetch_row($tdbRequestResult);
 $templisted = $tdbResult[0];
- 
+
 //IP schon in TempDB vorhanden?
 if ($templisted == 0) {
-    mysql_query("INSERT INTO `ddos_temp` (`ip`, `zeit`, `faktor`) VALUES ('$UserIP', '$PHPtime', 1)"); //Noch nicht vorhanden, also Eintrag anlegen
+	mysql_query("INSERT INTO `ddos_temp` (`ip`, `zeit`, `faktor`) VALUES ('$UserIP', '$PHPtime', 1)"); //Noch nicht vorhanden, also Eintrag anlegen
 }
- 
+
 //IP schon in TempDB vorhanden?
 if ($AbfrageTDB == 0) {
-    mysql_query("INSERT INTO `ddos_temp` (`ip`, `zeit`, `faktor`) VALUES ('$UserIP', '$PHPtime', 1)"); //Noch nicht vorhanden, also Eintrag anlegen
+	mysql_query("INSERT INTO `ddos_temp` (`ip`, `zeit`, `faktor`) VALUES ('$UserIP', '$PHPtime', 1)"); //Noch nicht vorhanden, also Eintrag anlegen
 } else {
-    //Zeit aus DB holen
-    $dbTimeRequest = "SELECT `zeit` FROM `ddos_temp` WHERE `ip` = '$UserIP'";
-    $dbTimeRequestResult = mysql_query($dbTimeRequest);
-    $dbTimeResult = mysql_fetch_row($dbTimeRequestResult);
-    $DBTime = $dbTimeResult[0];
- 
-    $PHPtime = time(); //Aktuelle PHP-Zeit speichern
- 
-    $Differenz = $PHPtime-$DBZeit; //Differenz zwischen DBTime und PHPtime bestimmen
- 
-    //Wenn Differenz größer als $MaxDiff (s.o.)
-    if($Differenz < $MaxDiff) {
-        //Faktor aus DB auslesen
-        $dbFaktorRequest = "SELECT `faktor` FROM `ddos_temp` WHERE `ip` = '$UserIP'";
-        $dbFaktorRequestResult = mysql_query($dbFaktorRequest);
-        $dbFaktorResult = mysql_fetch_row($dbFaktorRequestResult);
-        $dbFaktor = $dbFaktorResult[0];
- 
-        //Faktor lokal um 1 erhöhen
-        $NewFaktor = $dbFaktor + 1;
- 
-        //Lokalen Faktor in DB schreiben
-        mysql_query("UPDATE `ddos_temp` SET `faktor` = '$NewFaktor' WHERE `ip` = '$UserIP'");
-    }
- 
-    $PHPtime = time(); //Aktuelle PHP-Zeit speichern
-    mysql_query("UPDATE `ddos_temp` SET `zeit` = '$PHPtime' WHERE `ip` = '$UserIP'"); //Aktuelle Zeit in DB speichern
- 
-    //Faktor überprüfen, ob $MaxFaktor
-    if ($NeuerFaktor == $MaxFaktor) {
-        mysql_query("INSERT INTO `ddos_blacklist` (`ip`) VALUES ('$UserIP')"); //IP auf BlackList setzten
-        mysql_query("DELETE FROM `ddos_temp` WHERE `ip`= '$UserIP'"); //Diesen Eintrag aus TempDB löschen
-    }
+	//Zeit aus DB holen
+	$dbTimeRequest = "SELECT `zeit` FROM `ddos_temp` WHERE `ip` = '$UserIP'";
+	$dbTimeRequestResult = mysql_query($dbTimeRequest);
+	$dbTimeResult = mysql_fetch_row($dbTimeRequestResult);
+	$DBTime = $dbTimeResult[0];
+
+	$PHPtime = time(); //Aktuelle PHP-Zeit speichern
+
+	$Differenz = $PHPtime-$DBZeit; //Differenz zwischen DBTime und PHPtime bestimmen
+
+	//Wenn Differenz größer als $MaxDiff (s.o.)
+	if($Differenz < $MaxDiff) {
+		//Faktor aus DB auslesen
+		$dbFaktorRequest = "SELECT `faktor` FROM `ddos_temp` WHERE `ip` = '$UserIP'";
+		$dbFaktorRequestResult = mysql_query($dbFaktorRequest);
+		$dbFaktorResult = mysql_fetch_row($dbFaktorRequestResult);
+		$dbFaktor = $dbFaktorResult[0];
+
+		//Faktor lokal um 1 erhöhen
+		$NewFaktor = $dbFaktor + 1;
+
+		//Lokalen Faktor in DB schreiben
+		mysql_query("UPDATE `ddos_temp` SET `faktor` = '$NewFaktor' WHERE `ip` = '$UserIP'");
+	}
+
+	$PHPtime = time(); //Aktuelle PHP-Zeit speichern
+	mysql_query("UPDATE `ddos_temp` SET `zeit` = '$PHPtime' WHERE `ip` = '$UserIP'"); //Aktuelle Zeit in DB speichern
+
+	//Faktor überprüfen, ob $MaxFaktor
+	if ($NeuerFaktor == $MaxFaktor) {
+		mysql_query("INSERT INTO `ddos_blacklist` (`ip`) VALUES ('$UserIP')"); //IP auf BlackList setzten
+		mysql_query("DELETE FROM `ddos_temp` WHERE `ip`= '$UserIP'"); //Diesen Eintrag aus TempDB löschen
+	}
 }
 ?>
 ```

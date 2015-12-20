@@ -18,7 +18,7 @@ Die Vorgehensweise ist wirklich einfach und braucht nicht viel Vorwissen in PHP 
 * PHP-Script anlegen (z.B.: eine Textdatei mit der Endung `*.php` versehen) und folgenden Text dort hineinkopieren:
 ```php
 <?php
-    echo 'Hallo, VB!';
+	echo 'Hallo, VB!';
 ?>
 ```
 * Das Script auf einem php-fähigen Webserver (egal ob lokal oder im Netz) hochladen
@@ -27,12 +27,12 @@ Die Vorgehensweise ist wirklich einfach und braucht nicht viel Vorwissen in PHP 
 Dort geben Sie folgendes an:
 ```vb
 Public Class Form1
-    Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
-        Dim myWebClient As System.Net.WebClient
-        myWebClient = New System.Net.WebClient()
-        Dim phpResult As String phpResult = myWebClient.DownloadString(TextBox1.Text)
-        Label4.Text = phpResult
-    End Sub
+	Private Sub Button1_Click(sender As System.Object, e As System.EventArgs) Handles Button1.Click
+		Dim myWebClient As System.Net.WebClient
+		myWebClient = New System.Net.WebClient()
+		Dim phpResult As String phpResult = myWebClient.DownloadString(TextBox1.Text)
+		Label4.Text = phpResult
+	End Sub
 End Class
 ```
 * Nun können Sie das Programm starten, die URL zum PHP-Skript in der TextBox eingeben und Sie bekommen die Rückgabe (durch die php-Funktion `echo`) im Label angezeigt.
@@ -41,8 +41,8 @@ End Class
 Sie können Variablen übergeben, die im Script genutzt werden. Dazu ändern Sie das PHP-Script einfach folgendermaßen ab:
 ```php
 <?php
-    $vbText = $_GET['text'];
-    echo $vbText;
+	$vbText = $_GET['text'];
+	echo $vbText;
 ?>
 ```
 

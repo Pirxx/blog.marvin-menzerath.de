@@ -14,7 +14,7 @@ Wenn Sie in Ihrem Programm Werte berechnet oder verarbeitet haben, wollen Sie di
 ```java
 // Ausgabe eines fest eingegebenen Strings
 System.out.println("Ich bin ein Text");
- 
+
 // Ausgabe einer Variablen/eines Attributs
 System.out.println(var);
 ```
@@ -38,7 +38,7 @@ Scanner sc = new Scanner(System.in);
 String eingabe = sc.nextLine();
 // Schließen des Scanners (nicht nötig, aber empfohlen)
 sc.close();
- 
+
 // Ausgabe der Eingabe
 System.out.println(eingabe);
 ```
@@ -46,9 +46,9 @@ System.out.println(eingabe);
 Entwicklungsumgebungen wie Eclipse oder IntelliJ importieren die nötige Klasse (`java.util.Scanner`) automatisch. Falls Sie eine andere Entwicklungsumgebung nutzen, müssen Sie den Import manuell vornehmen, indem Sie noch vor den Beginn der Klasse (aber nach einem eventuellen Package-Namen) diese Zeile einfügen:
 ```java
 import java.util.Scanner;
- 
+
 public class MeineKlasse() {
-    // ...
+	// ...
 }
 ```
 

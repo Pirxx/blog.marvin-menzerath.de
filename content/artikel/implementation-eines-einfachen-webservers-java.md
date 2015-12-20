@@ -18,16 +18,16 @@ Das gesamte Projekt besteht aus 2 Packages mit jeweils 3 Klassen. Der Aufbau die
 1             | 2           | 3
 --------------|-------------|--------------
 de.menzerath. | httpserver. | HTTPServer
-              |             | HTTPThread
-              |             | WebResources
-              | util.       | FileManager
-              |             | Logger
-              |             | ServerHelper
+			  |             | HTTPThread
+			  |             | WebResources
+			  | util.       | FileManager
+			  |             | Logger
+			  |             | ServerHelper
 
 Der Einstiegspunkt der Anwendung liegt in der Klasse HTTPServer und dort (wie üblich) in der `main()`-Methode:
 ```java
 public static void main(String[] args) {
-    new HTTPServer(8080, new File("./www"), true, new File("log.txt"));
+	new HTTPServer(8080, new File("./www"), true, new File("log.txt"));
 }
 ```
 Dort wird nun ein neues Objekt der Klasse `HTTPServer` erstellt, welches wiederum einen ServerSocket für den angegebenen Port erstellt und auf diesem auf eingehende Verbindungen wartet, die dann jeweils an ein neues Objekt der Klasse `HTTPThread` übergeben werden. Letztere behandelt dann die eingehende Verbindung und den HTTP-Request entsprechend in einem eigenen Thread[^3] und sendet die HTTP-Response zurück an den anfragenden Client.[^4]
@@ -54,9 +54,9 @@ Nun gibt es nur noch zwei Fälle, in denen die Applikation eine Response wirklic
 ```java
 File[] files = file.listFiles();
 for (File myFile : files) {
-    String fileName = myFile.getName();
-    String fileSize = FileManager.getReadableFileSize(myFile.length());
-    String fileLastMod = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(myFile.lastModified())
+	String fileName = myFile.getName();
+	String fileSize = FileManager.getReadableFileSize(myFile.length());
+	String fileLastMod = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(myFile.lastModified())
 }
 ```
 Sollte "nur" eine Datei angefordert werden (wie es meistens der Fall ist), muss nicht mal eine wirkliche Ausgabe vorbereitet werden: Es wird nur ein InputStream, der die Datei zur Ausgabe an den Client einliest, benötigt und der Content-Typ der Datei muss anhand der Dateiendung festgestellt werden. Schon können die Daten an den Client versendet werden.

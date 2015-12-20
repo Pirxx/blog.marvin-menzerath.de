@@ -19,28 +19,28 @@ Erstellen Sie zuerst eine Datei mit dem Namen `feed.xml`. Dort kopieren Sie einf
 ```markup
 <xml version="1.0" encoding="utf-8">
   <rss version="2.0">
-    <channel>
-        <title>Website-Name</title>
-        <link>http://domain.tld</link>
-        <description>Website-Beschreibung</description>
-        <language>de-de</language>
- 
-        <item>
-            <title>Artikel 1</title>
-            <description>Beschreibung des Artikels</description>
-            <link>http://domain.tld/artikel.php</link>
-            <guid>http://domain.tld/artikel.php</guid>
-            <pubdate>30 Jul 2012 17:00:00 +0000</pubdate>
-        </item>
- 
-        <item>
-            <title>Artikel 2</title>
-            <description>Beschreibung des Artikels</description>
-            <link>http://domain.tld/artikel.php</link>
-            <guid>http://domain.tld/artikel.php</guid>
-            <pubdate>29 Jul 2012 16:00:00 +0000</pubdate>
-        </item>
-    </channel>
+	<channel>
+		<title>Website-Name</title>
+		<link>http://domain.tld</link>
+		<description>Website-Beschreibung</description>
+		<language>de-de</language>
+
+		<item>
+			<title>Artikel 1</title>
+			<description>Beschreibung des Artikels</description>
+			<link>http://domain.tld/artikel.php</link>
+			<guid>http://domain.tld/artikel.php</guid>
+			<pubdate>30 Jul 2012 17:00:00 +0000</pubdate>
+		</item>
+
+		<item>
+			<title>Artikel 2</title>
+			<description>Beschreibung des Artikels</description>
+			<link>http://domain.tld/artikel.php</link>
+			<guid>http://domain.tld/artikel.php</guid>
+			<pubdate>29 Jul 2012 16:00:00 +0000</pubdate>
+		</item>
+	</channel>
   </rss>
 </xml>
 ```

@@ -13,18 +13,18 @@ Oft muss man als Programmierer durch Arrays und Listen (ArrayLists) iterieren. D
 Um durch ein Array zu iterieren nutzen Sie einfach die folgende Schreibweise für eine `foreach`-Schleife:
 ```java
 String[] myArray = new String[]{"Hallo", "ich", "bin", "ein", "Array"};
- 
+
 for (String s : myArray) {
-    System.out.println(s);
+	System.out.println(s);
 }
 ```
 
 Somit sparen Sie sich folgende `for`-Schleife zum Durchlaufen des Arrays:
 ```java
 String[] myArray = new String[]{"Hallo", "ich", "bin", "ein", "Array"};
- 
+
 for (int i = 0; i < myArray.length; i++) {
-    System.out.println(myArray[i]);
+	System.out.println(myArray[i]);
 }
 ```
 
@@ -46,9 +46,9 @@ myList.add("ich");
 myList.add("bin");
 myList.add("eine");
 myList.add("Liste");
- 
+
 for (String s : myList) {
-    System.out.println(s);
+	System.out.println(s);
 }
 ```
 

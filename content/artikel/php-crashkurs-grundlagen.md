@@ -33,7 +33,7 @@ Die Zeile, die mit `//` beginnt ist ein **Kommentar**. Diese wird nicht vom PHP-
 Um nun im Webbrowser etwas ausgeben zu können, benötigen Sie den `echo`-Befehl. Die Syntax ist sehr einfach; Sie müssen nur die Anführungszeichen und das abschließende Semikolon beachten. Dieses muss (fast) immer an das Ende einer Befehlszeile.
 ```php
 <?php
-echo "Hallo";
+	echo "Hallo";
 ?>
 ```
 Wenn Sie nun die Datei in Ihrem Webbrowser aufrufen, sehen Sie nur den Text "Hallo".
@@ -41,8 +41,8 @@ Wenn Sie nun die Datei in Ihrem Webbrowser aufrufen, sehen Sie nur den Text "Hal
 Dieser lässt sich nun einfach mit der HTML-Syntax formatieren:
 ```php
 <?php
-echo "<h1>Hallo</h1>";
-echo "<h2>und Willkommen</h2>";
+	echo "<h1>Hallo</h1>";
+	echo "<h2>und Willkommen</h2>";
 ?>
 ```
 
@@ -50,13 +50,13 @@ Gleichzeitig können Sie auch in einer PHP-Datei normalen HTML-Code verwenden:
 ```php
 <html>
 <head>
-<title>Hallo</title>
+	<title>Hallo</title>
 </head>
 <body>
-<?php
-echo "<h1>Hallo</h1>";
-echo "<h2>und Willkommen</h2>";
-?>
+	<?php
+		echo "<h1>Hallo</h1>";
+		echo "<h2>und Willkommen</h2>";
+	?>
 </body>
 </html>
 ```
@@ -67,8 +67,8 @@ Was wäre eine Programmiersprache nur ohne die guten, alten Variablen? PHP macht
 Legen Sie nun eine Variable an und geben Sie diese einfach wieder aus:
 ```php
 <?php
-$variable = "Hallo!";
-echo $variable;
+	$variable = "Hallo!";
+	echo $variable;
 ?>
 ```
 Die Ausgabe wird nun "Hallo" sein.
@@ -76,8 +76,8 @@ Die Ausgabe wird nun "Hallo" sein.
 Wenn Sie einen Integer verwenden wollen, geht dies genauso einfach:
 ```php
 <?php
-$variable = 5;
-echo $variable;
+	$variable = 5;
+	echo $variable;
 ?>
 ```
 Hier ist die Ausgabe nun einfach 5.
@@ -85,12 +85,12 @@ Hier ist die Ausgabe nun einfach 5.
 Bei Integern bietet es sich nun an, mit diesen zu rechnen; Strings kann man jedoch aneinanderhängen:
 ```php
 <?php
-$varZahl1 = 5;
-$varZahl2 = 3;
-$varString1 = "Hallo, Herr ";
-$varString2 = "oder Frau Meier.":
-echo $varZahl1 + $varZahl2;
-echo $varString1.$varString2;
+	$varZahl1 = 5;
+	$varZahl2 = 3;
+	$varString1 = "Hallo, Herr ";
+	$varString2 = "oder Frau Meier.":
+	echo $varZahl1 + $varZahl2;
+	echo $varString1.$varString2;
 ?>
 ```
 Als Ausgabe erhalten Sie nun einmal die Zahl 8 und zum Zweiten den Text "Hallo, Herr oder Frau Meier.".
@@ -106,13 +106,13 @@ $var = "Hallo";
 $var2 = true;
 
 if ($var == "Hallo") {
-    if ($var2) {
-        if ($var3 > 5) {
-            echo "Alles OK!";
-        }
-    }
+	if ($var2) {
+		if ($var3 > 5) {
+			echo "Alles OK!";
+		}
+	}
 } else {
-    echo "1. Bedingung nicht erfüllt";
+	echo "1. Bedingung nicht erfüllt";
 }
 ?>
 ```
@@ -126,7 +126,7 @@ a) Die **while-Schleife**:
 ```php
 <?php
 while (Bedingung erfüllt) {
-    //Tu etwas
+	//Tu etwas
 }
 ?>
 ```
@@ -136,7 +136,7 @@ b) die **for-Schleife**:
 ```php
 <?php
 for ($i = 0; $i >=20; $i++) {
-    //Tu etwas
+	//Tu etwas
 }
 ?>
 ```
@@ -147,8 +147,8 @@ Dies sieht zwar sehr komplex aus, ist aber sehr leicht zu verstehen und umzusetz
 Arrays könnte man salopp als erweiterte Variable, bzw. mehrfach belegbare Variable bezeichnen. In ihnen lassen sich **beliebig viele Einträge des gleichen Datentyps** speichern und auch wieder ausgeben. Das ganze geht folgendermaßen:
 ```php
 <?php
-$myArray = array('Hallo', 'Willkommen', 'Guten Tag');
-echo myArray[1];
+	$myArray = array('Hallo', 'Willkommen', 'Guten Tag');
+	echo myArray[1];
 ?>
 ```
 Die Ausgabe ist nicht (wie Sie vielleicht vermuten) "Hallo", sondern "Willkommen". Dies liegt daran, dass in einem Array der **erste Eintrag als 0 gezählt** wird.
@@ -156,7 +156,7 @@ Die Ausgabe ist nicht (wie Sie vielleicht vermuten) "Hallo", sondern "Willkommen
 Wenn Sie nun also den ersten Eintrag verändern wollen, müssen Sie folgendes schreiben:
 ```php
 <?php
-myArray[0] = "Auf Wiedersehen!";
+	myArray[0] = "Auf Wiedersehen!";
 ?>
 ```
 
@@ -164,7 +164,7 @@ myArray[0] = "Auf Wiedersehen!";
 Oft benötigt man **Informationen über den Aufrufer der Website** – ob IP-Adresse oder den verwendeten Browser. Das alles geht über das so genannte Server-Array. Dieses enthält alle wichtigen Informationen, die Sie sich folgendermaßen ausgeben lassen können:
 ```php
 <?php
-echo $_SERVER['Indizie'];
+	echo $_SERVER['Indizie'];
 ?>
 ```
 
@@ -184,10 +184,10 @@ Früher oder später wollen Sie nun **User-Eingaben nutzen und verarbeiten** kö
 Und der zugehörige Code so:
 ```php
 <?php
-$t1 = htmlspecialchars($_GET['text1']);
-$t2 = htmlspecialchars($_GET['text']);
-echo $t1;
-echo t2;
+	$t1 = htmlspecialchars($_GET['text1']);
+	$t2 = htmlspecialchars($_GET['text']);
+	echo $t1;
+	echo t2;
 ?>
 ```
 Wie Sie sehen, werden die Daten mit `$_GET['xxx']` aus der URL ausgelesen und danach von `htmlspecialchars()` geparst. Letzterer Schritt ist notwendig, damit HTML-Code nicht vom Browser dargestellt, sondern ausgegeben wird. So wird ein `h1` nicht als Überschrift dargestellt, sondern einfach als Text ausgegeben.
@@ -196,10 +196,10 @@ Wie Sie sehen, werden die Daten mit `$_GET['xxx']` aus der URL ausgelesen und da
 Für die Datenübermittlung via `POST` benötigen Sie meist ein Formular. Dieses erstellen Sie einfach via HTML und geben als `action="script.php"` den Pfad zum PHP-Skript an. Danach verläuft die Verarbeitung der Daten fast genau gleich wie bei der GET-Methode:
 ```php
 <?php
-$t1 = htmlspecialchars($_POST['feld1']);
-$t2 = htmlspecialchars($_POST['feld2']);
-echo $t1;
-echo t2;
+	$t1 = htmlspecialchars($_POST['feld1']);
+	$t2 = htmlspecialchars($_POST['feld2']);
+	echo $t1;
+	echo t2;
 ?>
 ```
 Sie müssen nur darauf achten, dass Ihre Textfelder die richtigen Namen (`name="feld1"`) im HTML-Code haben.
@@ -208,13 +208,13 @@ Sie müssen nur darauf achten, dass Ihre Textfelder die richtigen Namen (`name="
 In PHP gibt es wie in vielen anderen Programmiersprachen **Funktionen**. Die Meisten sind bei PHP-Skripten dazu gedacht Werte zu errechnen, bzw. aus einer Datenbank auszulesen und dann an das eigentliche Skript zurückzugeben. Daher sieht dies in einem Skript meist so aus:
 ```php
 <?php
-echo "Es geht los...";
-echo sagHallo();
-echo "Ende.";
+	echo "Es geht los...";
+	echo sagHallo();
+	echo "Ende.";
 
-function sagHallo() {
-    return "Guten Tag."
-}
+	function sagHallo() {
+		return "Guten Tag."
+	}
 ?>
 ```
 
@@ -228,12 +228,12 @@ Die Funktion `int mt_rand (int $min, int $max)` erzeugt bereits die Zufallszahle
 Hier also nun das fertige Skript:
 ```php
 <?php
-$von = intval($_GET['von']);
-$bis = intval($_GET['bis']);
+	$von = intval($_GET['von']);
+	$bis = intval($_GET['bis']);
 
-$zahl = mt_rand($von, $bis);
+	$zahl = mt_rand($von, $bis);
 
-echo "Ihre Zufallszahl lautet: ".$zahl;
+	echo "Ihre Zufallszahl lautet: ".$zahl;
 ?>
 ```
 

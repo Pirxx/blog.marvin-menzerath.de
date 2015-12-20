@@ -78,9 +78,9 @@ vv1     | v2      | v3
 
 Und bei der zweiten SELECT-Abfrage schließlich folgende:
 
-spalte1 |   | 
+spalte1 |   |
 --------|---|---
-vv1     |   | 
+vv1     |   |
 
 Allein durch diese einfachen und wenigen Befehle können Sie problemlos Daten speichern und wieder abrufen. Doch wie genau können Sie jetzt diese Befehle an die Datenbank, bzw. den MySQL-Server schicken?
 
@@ -113,19 +113,19 @@ Im folgenden Beispiel zeige ich Ihnen das mit einem Gästebuch und der entsprech
 
 ```php
 <?php
-    // Aufbau der Verbindung zum Datenbank-Server
-    mysql_connect("localhost", "dbserver", "123meinpasswort123");
-    // Auswahl der Datenbank
-    mysql_select_db("dbname");
-    // Auswahl des Charsets
-    mysql_set_charset("utf8");
-    // Vorbereitung der Daten
-    $name = mysql_real_escape_string($_POST['name']);
-    $nachricht = mysql_real_escape_string($_POST['nachricht']);
-    // Eintragung der Daten
-    mysql_query("INSERT INTO guestbook VALUES ('".$name."', '".$nachricht."');");
-    // Beenden der Verbindung
-    mysql_close();
+	// Aufbau der Verbindung zum Datenbank-Server
+	mysql_connect("localhost", "dbserver", "123meinpasswort123");
+	// Auswahl der Datenbank
+	mysql_select_db("dbname");
+	// Auswahl des Charsets
+	mysql_set_charset("utf8");
+	// Vorbereitung der Daten
+	$name = mysql_real_escape_string($_POST['name']);
+	$nachricht = mysql_real_escape_string($_POST['nachricht']);
+	// Eintragung der Daten
+	mysql_query("INSERT INTO guestbook VALUES ('".$name."', '".$nachricht."');");
+	// Beenden der Verbindung
+	mysql_close();
 ?>
 ```
 
@@ -135,28 +135,28 @@ Diese sorgt dafür, dass der Nutzer **keine SQL-Statements in seine Nachricht ei
 Zur Auswertung der Daten benutze ich eine einfache Tabelle. In dieser sollen die Daten wieder ausgegeben werden.
 ```php
 <?php
-    // Aufbau der Verbindung zum Datenbank-Server
-    mysql_connect("localhost", "dbserver", "123meinpasswort123");
-    // Auswahl der Datenbank
-    mysql_select_db("dbname");
-    // Abfrage der Daten
-    $result = mysql_query("SELECT * from log");
-    // Schleife zur Darstellung der Daten in Tabellenform
-    echo "<table border='1'>
-       <tr>
-           <th>Name</th>
-           <th>Nachricht</th>
-       </tr>";
- 
-    while($row = mysql_fetch_array($result)){
-        echo "<tr>
-           <td>".htmlspecialchars($row['name'])."</td>
-           <td>".htmlspecialchars($row['nachricht'])."</td>
-       </tr>";
-    }
-    echo "</table>";
-    // Beenden der Verbindung
-    mysql_close();
+	// Aufbau der Verbindung zum Datenbank-Server
+	mysql_connect("localhost", "dbserver", "123meinpasswort123");
+	// Auswahl der Datenbank
+	mysql_select_db("dbname");
+	// Abfrage der Daten
+	$result = mysql_query("SELECT * from log");
+	// Schleife zur Darstellung der Daten in Tabellenform
+	echo "<table border='1'>
+	   <tr>
+		   <th>Name</th>
+		   <th>Nachricht</th>
+	   </tr>";
+
+	while($row = mysql_fetch_array($result)){
+		echo "<tr>
+		   <td>".htmlspecialchars($row['name'])."</td>
+		   <td>".htmlspecialchars($row['nachricht'])."</td>
+	   </tr>";
+	}
+	echo "</table>";
+	// Beenden der Verbindung
+	mysql_close();
 ?>
 ```
 

@@ -13,7 +13,7 @@ HTML ist die Grundlage zum Einstieg in die Website-Erstellung. Mit der einfachen
 HTML ist **keine Programmiersprache** wie C++ oder Java, sondern eine Style, bzw. **Definitionssprache**. Jeder Browser könnte somit seine eigene Sprache fordern oder nur Inhalte der eigenen Sprache (korrekt) darstellen.
 Der weltweit bekannteste und neueste Standard ist **HTML5**. Vorallem durch die neuen Audio- und Video-Tags (dazu komme ich später) können Websites interaktiver gestaltet werden.
 
-In dieser kurzen Serie möchte ich Ihnen nun die Erstellung einer ersten eigenen Website zeigen – und Sie können dabei mitmachen! Wenn etwas nicht so funktionieren sollte wie Sie es sich vorstellen, downloaden Sie sich einfach das Paket mit allen Dateien (Link am Ende des Artikels). 
+In dieser kurzen Serie möchte ich Ihnen nun die Erstellung einer ersten eigenen Website zeigen – und Sie können dabei mitmachen! Wenn etwas nicht so funktionieren sollte wie Sie es sich vorstellen, downloaden Sie sich einfach das Paket mit allen Dateien (Link am Ende des Artikels).
 
 ## Erste Schritte
 Bevor Sie anfangen können Ihre erste Website zu schreiben, sollten Sie den [Notepad++ Editor downloaden](http://notepad-plus-plus.org/download) und installieren. Dieser hilft Ihnen bei den Code-Arbeiten durch Syntax-Hervorhebungen und einfache Einrückungen. Falls Sie den Editor nicht benutzen wollen reicht auch der normale Windows-Editor. Keinesfalls sollten Sie Word oder ein anderes Textverarbeitungsprogramm benutzen. Diese "verunstalten" den Code meist unnötig und machen spätere Bearbeitungen sehr schwer.
@@ -44,27 +44,27 @@ Durch einige in HTML 5 neu eingeführte Tags und Elemente sowie einge Standard-E
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Meine Seite</title>
-    <meta name="description" content="Meine keine Website mit vielen tollen Inhalten!" />
+	<title>Meine Seite</title>
+	<meta name="description" content="Meine keine Website mit vielen tollen Inhalten!" />
 </head>
 <body>
-    <header>
-        <!-- Logo, Seitentitel, ... -->
-        <nav>
-            <!-- Die Navigation -->
-        </nav>
-    </header>
-    <article>
-        <section>
-            <!-- Der eigentliche Inhalt -->
-        </section>
-        <section>
-            <!-- Weiterer Inhalt (Sidebar) -->
-        </section>
-    </article>
-    <footer>
-        <!-- Copyright, weitere Links -->
-    </footer>
+	<header>
+		<!-- Logo, Seitentitel, ... -->
+		<nav>
+			<!-- Die Navigation -->
+		</nav>
+	</header>
+	<article>
+		<section>
+			<!-- Der eigentliche Inhalt -->
+		</section>
+		<section>
+			<!-- Weiterer Inhalt (Sidebar) -->
+		</section>
+	</article>
+	<footer>
+		<!-- Copyright, weitere Links -->
+	</footer>
 </body>
 </html>
 ```
@@ -128,16 +128,16 @@ Mit Aufzählungen lassen sich viele Inhalte schnell und unkompliziert darstellen
 Es gibt zwei verschiedene Arten von Aufzählungen: Die **unsortierten** und die **sortierten**. Der Unterschied dabei ist das Aufzählungsymbol (entweder ein Punkt oder eine Zahl).
 ```markup
 <ul>
-    <li>Stichpunkt</li>
-    <li>Stichpunkt</li>
-    <li>Stichpunkt</li>
-    <li>Stichpunkt</li>
+	<li>Stichpunkt</li>
+	<li>Stichpunkt</li>
+	<li>Stichpunkt</li>
+	<li>Stichpunkt</li>
 </ul>
 <ol>
-    <li>Stichpunkt</li>
-    <li>Stichpunkt</li>
-    <li>Stichpunkt</li>
-    <li>Stichpunkt</li>
+	<li>Stichpunkt</li>
+	<li>Stichpunkt</li>
+	<li>Stichpunkt</li>
+	<li>Stichpunkt</li>
 </ol>
 ```
 ![HTML-Tutorial: Aufzählungen](/images/html-crashkurs-grundlagen/Aufzaehlungen.png)
@@ -171,37 +171,37 @@ Nun haben Sie schon eine Menge gelernt und können damit **aus dem Grundgerüst 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Meine Seite</title>
-    <meta name="description" content="Meine kleine Website mit vielen tollen Inhalten!" />
+	<title>Meine Seite</title>
+	<meta name="description" content="Meine kleine Website mit vielen tollen Inhalten!" />
 </head>
 <body>
-    <header>
-        <h1>Meine Seite</h1>
-        <p>Slogan/Untertitel</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="seite2.html">Über mich</a></li>
-                <li><a href="seite2.html">Informationen</a></li>
-                <li><a href="seite2.html">Impressum</a></li>
-            </ul>
-        </nav>
-    </header>
-    <article>
-        <section>
-            <h2>Der Inhalt</h2>
-            <p>Hier finden Sie <b>sehr viele</b> Inhalte!</p>
-            <img src="html5.png" />
-            <p>Icon by <a href="http://www.w3.org" target="_blank">W3C</a>.</p>
-        </section>
-        <section>
-            <h2>Sidebar</h2>
-            <p>Hier finden Sie <u>zusätzliche</u> Inhalte!</p>
-        </section>
-    </article>
-    <footer>
-        <p>(c) 2013: <a href="http://menzerath.eu">Marvin Menzerath</a></p>
-    </footer>
+	<header>
+		<h1>Meine Seite</h1>
+		<p>Slogan/Untertitel</p>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="seite2.html">Über mich</a></li>
+				<li><a href="seite2.html">Informationen</a></li>
+				<li><a href="seite2.html">Impressum</a></li>
+			</ul>
+		</nav>
+	</header>
+	<article>
+		<section>
+			<h2>Der Inhalt</h2>
+			<p>Hier finden Sie <b>sehr viele</b> Inhalte!</p>
+			<img src="html5.png" />
+			<p>Icon by <a href="http://www.w3.org" target="_blank">W3C</a>.</p>
+		</section>
+		<section>
+			<h2>Sidebar</h2>
+			<p>Hier finden Sie <u>zusätzliche</u> Inhalte!</p>
+		</section>
+	</article>
+	<footer>
+		<p>(c) 2013: <a href="http://menzerath.eu">Marvin Menzerath</a></p>
+	</footer>
 </body>
 </html>
 ```

@@ -13,15 +13,15 @@ Legen Sie zunächst eine neue PHP-Datei im Verzeichnis **über** dem Verzeichnis
 Die Verzeichnisstruktur sollte dabei folgendermaßen aussehen:
 ```language-markup
 style
-  |__css
-     |__bootstrap.css
-     |__lightbox.css
-     |__main.css
-     |__other.css
-  |__js
-     |__bootstrap.js
-     |__ ...
-  |__css.php
+	|__css
+		|__bootstrap.css
+		|__lightbox.css
+		|__main.css
+		|__other.css
+	|__js
+		|__bootstrap.js
+		|__ ...
+	|__css.php
 ```
 
 In diese gerade angelegte `css.php` kopieren Sie nun folgenden Code hinein:
@@ -31,24 +31,24 @@ In diese gerade angelegte `css.php` kopieren Sie nun folgenden Code hinein:
   * Packt jede CSS-Datei in eine komprimierte Ausgabe
   * (c) 2013-2014: Marvin Menzerath
 */
- 
+
 // Jeder Datei-Inhalt wird in $buffer kopiert
 $buffer = '';
 foreach (glob('css/*.css') as $cssFile) {
-    $buffer .= file_get_contents($cssFile);
+	$buffer .= file_get_contents($cssFile);
 }
- 
+
 // Komprimierung
 $buffer = preg_replace('!/\*[^*]*\*+([^/][^*]*\*+)*/!', '', $buffer);
 $buffer = str_replace(': ', ':', $buffer);
 $buffer = str_replace(array('\r\n', '\r', '\n', '\t', '  ', '    ', '    '), '', $buffer);
- 
+
 // Header (zum Caching)
 ob_start('ob_gzhandler');
 header('Cache-Control: public');
 header('Expires: '.gmdate('D, d M Y H:i:s', time() + 86400 * 7).' GMT');
 header('Content-Type: text/css');
- 
+
 // Ausgabe
 echo($buffer);
 ?>

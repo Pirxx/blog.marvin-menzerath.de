@@ -32,19 +32,19 @@ Benutzen Sie dazu beispielsweise einfach diesen Code:
 ```
 {% highlight java %}
 public class MeineKlassse {
-    private int zahl;
- 
-    public MeineKlasse() {
-        zahl = 1337;
-        System.out.println(zahl);
-    }
+	private int zahl;
+
+	public MeineKlasse() {
+		zahl = 1337;
+		System.out.println(zahl);
+	}
 }
 {% endhighlight %}
 ```
 * **Behandlung der Dateien**: Nur wenn Dateien (egal mit welcher Datei-Endung Sie gespeichert wurden) einen YAML-formatierten Header aufweisen, werden Sie von Jekyll geparst. Andernfalls werden Sie einfach so (wie sie sind) ausgegeben. Dieser Header sieht beispielsweise so aus:
 ```
 ---
-layout: default 
+layout: default
 title: Meine neue Homepage
 ---
 ```

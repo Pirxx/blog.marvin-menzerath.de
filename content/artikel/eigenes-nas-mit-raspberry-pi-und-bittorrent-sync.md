@@ -41,20 +41,20 @@ chmod +x btsync
 ```bash
 #!/bin/sh
 # /etc/init.d/btsync
- 
+
 case "$1" in
 start)
-    /home/marvin/btsync/btsync
-    ;;
+	/home/marvin/btsync/btsync
+	;;
 stop)
-    killall btsync
-    ;;
+	killall btsync
+	;;
 *)
-    echo "Usage: /etc/init.d/btsync {start|stop}"
-    exit 1
-    ;;
+	echo "Usage: /etc/init.d/btsync {start|stop}"
+	exit 1
+	;;
 esac
- 
+
 exit 0
 ```
 Beachten Sie, dass der **Pfad zur ausführbaren Datei eventuell verändert werden muss**!

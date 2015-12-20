@@ -30,28 +30,28 @@ b) mit einer App auf dem Smartphone:
 * Nach dem Start sehen Sie die vergangenen und neuen Meldungen auf dem Bildschrim
 
 Zu dieser Methode kann ich leider keinen Screenshot zeigen, da ab Android Version 4.2 (Jelly Bean) alle Apps nur noch auf ihren eigenen Log zugreifen können.
- 
+
 ## Eine typische Fehlermeldung
 Mit dem folgenden Quelltext habe ich nun einen **StackOverflow** erzeugt und die App zum Absturz gebracht.
 ```java
 package com.example.meineapp;
- 
+
 import android.os.Bundle;
 import android.app.Activity;
- 
+
 public class MainActivity extends Activity {
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        killMyApp();
-    }
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		killMyApp();
+	}
  
-    private void killMyApp() {
-        while (true) {
-            killMyApp();
-        }
-    }
+	private void killMyApp() {
+		while (true) {
+			killMyApp();
+		}
+	}
 }
 ```
 

@@ -52,18 +52,18 @@ ActionBar bar = getSupportActionBar();
 ```java
 @Override
 public boolean onCreateOptionsMenu(Menu menu) {
-    menu.add(0, 1, 0, "Über")
-    .setIcon(R.drawable.ic_myIcon)
-    .setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
-    return true;
+	menu.add(0, 1, 0, "Über")
+	.setIcon(R.drawable.ic_myIcon)
+	.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
+	return true;
 }
 
 @Override
 public boolean onOptionsItemSelected(MenuItem item) {
-    if (item.getItemId() == 1) {
-        // Tu' was!
-    }
-    return true;
+	if (item.getItemId() == 1) {
+		// Tu' was!
+	}
+	return true;
 }
 ```
 
