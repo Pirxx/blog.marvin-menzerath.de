@@ -44,6 +44,11 @@ _paq.push(['enableLinkTracking']);
 })();
 
 /* Seite fertig geladen */
+$(document).ready(function() {
+	(adsbygoogle = window.adsbygoogle || []).push({});
+});
+
+/* Seite gewechselt / geladen */
 InstantClick.on('change', function() {
 	Prism.highlightAll();
 	$(".post-content").fitVids();
