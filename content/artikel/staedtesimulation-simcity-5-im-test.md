@@ -2,7 +2,7 @@
 title       = "SimCity 5 - Test der neuen Städtesimulation von EA"
 description = "In diesem Artikel geht es um meine ersten Spieleindrücke im Hinblick auf den Spielspaß, Funktionen, Grafik und die Performance bei EAs neuem SimCity."
 date        = "2013-03-31T20:00:00"
-tag         = ["Spiele", "Review"]
+tag         = ["Review", "Spiele"]
 +++
 
 Anfang des Monats hat EA den neuesten Teil der SimCity-Reihe rausgebracht – nach fast 10 Jahren. Der neue Teil soll dank neuer Engine auch auf älteren PCs laufen und gute Qualität liefern.
