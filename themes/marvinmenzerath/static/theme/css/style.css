@@ -678,7 +678,7 @@ main {
 /* ==========================================================================
    10. Media Queries - Height smaller than 600px
    ========================================================================== */
-@media only screen and (max-height: 580px) {
+@media only screen and (max-height: 600px) {
 	#sidebar-internal {
 		display: none;
 	}
