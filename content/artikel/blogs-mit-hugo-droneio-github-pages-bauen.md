@@ -26,6 +26,8 @@ Die beiden Berechtigungen `repo` und `public_repo` sollten dabei vollkommen ausr
 
 Kopieren Sie den nun angezeigten Token an eine sichere Stelle, denn er wird Ihnen nie wieder angezeigt werden können.
 
+Legen Sie außerdem im Blog-Repository einen neuen Branch namens `gh-pages` an, damit es später zu keiner Fehlermeldung kommt.
+
 ### Drone.io
 Legen Sie bei Drone.io ein [neues Projekt](https://drone.io/new#/github) an, nachdem Sie sich dort angemeldet haben.
 Wählen Sie das passende Repository aus und anschließend eine beliebige Sprache (ich empfehle Go, da "Hugo" in dieser Sprache geschrieben ist).
@@ -34,7 +36,7 @@ Das nun angezeige Standard-Build-Script können Sie entfernen und anschließend 
 Nun müssen Sie beiden Textfelder folgendermaßen verändern:
 
 #### Environment Variables
-Fügen Sie hier zwischen den beiden Anführungszeichen Ihren GitHub-Nutzernamen, den Blog-Repository-Namen und den zuvor erstellten GitHub Access-Token ein.
+Fügen Sie hier zwischen den beiden Anführungszeichen Ihren GitHub-Nutzernamen, den Blog-Repository-Namen und den zuvor erstellten GitHub Access-Token ein. Achten Sie dabei unbedingt auf Groß- und Kleinschreibung.
 
 ```bash
 GH_USER_NAME=""
