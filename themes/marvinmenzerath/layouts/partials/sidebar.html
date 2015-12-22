@@ -16,6 +16,7 @@
 					{{ range .Site.Menus.tags }}
 					<li><a href="{{ $.Site.BaseURL }}tag/{{ .Identifier }}/" title="{{ .Name }}"><i class="fa fa-tag"></i> {{ .Name }}</a></li>
 					{{end}}
+					<li><a href="{{ $.Site.BaseURL }}tag/" title="Alle Tags"><i class="fa fa-tags"></i> Alle Tags</a></li>
 				</ul>
 				<ul>
 					{{ range .Site.Menus.sites }}

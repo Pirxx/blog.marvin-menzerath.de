@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+{{ partial "sidebar.html" . }}
+<main>
+	<article class="post">
+		<h1 class="post-title">{{ .Title }}</h1>
+		<section class="post-content">
+			{{ .Content }}
+			<ul>
+				{{ range $name, $taxonomy := .Site.Taxonomies.tag }}
+					<li><a href="/tag/{{ $name | urlize }}">{{ title $name }}</a></li>
+				{{ end }}
+			</ul>
+		</section>
+		{{ partial "ads.html" . }}
+	</article>
+</main>
+{{ partial "footer.html" . }}
