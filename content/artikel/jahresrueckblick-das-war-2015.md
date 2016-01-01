@@ -37,11 +37,10 @@ Neben Facebook, Twitter und dem RSS-Feed biete ich seit kurzem auch einen [Teleg
 
 ### Statistiken
 Da die meisten Menschen Statistiken und Diagramme mögen, möchte ich auch an dieser Stelle ein paar Kernmetriken aus Piwik vorstellen.
-Stand der Daten ist der 30.12.2015 um ca. 16:00 Uhr (man möge mir die fehlenden 32 Stunden verzeihen).
 
 #### Besucherzahlen
-Insgesamt kommt dieser Blog auf rund 117.100 Besuche im letzten Jahr, was durchschnittlich ca. 9.800 Besuche im Monat bedeutet.
-Im Bezug auf die Seitenansichten liegt der Wert bei rund 157.000 Ansichten im Jahr, bzw. durchschnittlich ca. 13.000 Ansichten im Monat.
+Insgesamt kommt dieser Blog auf rund 117.600 Besuche im letzten Jahr, was durchschnittlich ca. 9.800 Besuche im Monat bedeutet.
+Im Bezug auf die Seitenansichten liegt der Wert bei rund 157.500 Ansichten im Jahr, bzw. durchschnittlich ca. 13.100 Ansichten im Monat.
 
 ![Besucherzahlen](/images/jahresrueckblick-das-war-2015/besucherzahlen.png)
 
@@ -101,11 +100,11 @@ Abschließend noch die verwendeten Betriebssysteme und Browser der Besucher:
 
 | Betriebssystem | Besuche |
 |----------------|---------|
-| Windows 7      | 34,5 %  |
-| Windows 8.1    | 15,8 %  |
+| Windows 7      | 34,4 %  |
+| Windows 8.1    | 15,7 %  |
 | Windows 10     | 8,0 %   |
 | Ubuntu         | 6,6 %   |
-| Mac 10.10      | 5,8 %   |
+| Mac 10.10      | 5,7 %   |
 
 | Browser           | Besuche |
 |-------------------|---------|
