@@ -7,8 +7,7 @@ type        = "page"
 +++
 
 ## Partnerseiten
-* [BlackPhantom.DE](https://blackphantom.de)
-  Technik, Internet & Sicherheit
+* [Nerdmind.DE](https://nerdmind.de)
 * [Ratgeber-Forum](http://ratgeber---forum.de)
   Das Ratgeber-Forum setzt auf Einfachheit, Rat, Hilfe und Informationen.
 

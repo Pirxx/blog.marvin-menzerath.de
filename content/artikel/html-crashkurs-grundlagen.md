@@ -209,5 +209,3 @@ Nun haben Sie schon eine Menge gelernt und können damit **aus dem Grundgerüst 
 
 ### Download
 Den Download dieser fast fertigen Website finden Sie [hier](/downloads/HTML-Tutorial.zip) zur freien Verwendung.
-
-Außerdem interessant: [HTML 5 Tutorial für Anfänger](https://blackphantom.de/tutorials/html5-tutorial-fuer-anfaenger-1.php)

@@ -22,5 +22,5 @@ Wer den kostenpflichtigen TV-Sender FOX in Deutschland empfängt, kann **seit Ok
 <iframe width="1280" height="720" src="//www.youtube-nocookie.com/embed/cu2ApTImBKc?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ## Ein Serientipp? Eindeutig!
-The Walking Dead ist eine **eindeutige Serienempfehlung** von mir. Genauso wie andere von AMC produzierte Serien wie [Breaking Bad](https://blackphantom.de/artikel/serientipp-breaking-bad-vom-chemielehrer-zum-drogenkoenig/) (Artikel bei BlackPhantom.DE) steht hier nicht das offensichtliche "Zombie-Abschlachten" im Vordergrund, sondern das Verhalten der Menschen in einer völlig neuen Situation.
+The Walking Dead ist eine **eindeutige Serienempfehlung** von mir. Genauso wie bei anderen von AMC produzierte Serien wie Breaking Bad steht hier nicht das offensichtliche "Zombie-Abschlachten" im Vordergrund, sondern das Verhalten der Menschen in einer völlig neuen Situation.
 **Und schon seit 4 Staffeln begeistert The Walking Dead Fans der Comic-Reihe, Kritiker sowie Zuschauer in den USA und Europa.**

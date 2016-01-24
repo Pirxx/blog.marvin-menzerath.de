@@ -16,7 +16,7 @@ Der seit Jahren lieb-gewonnene **Start-Button** mit allen, neuen Funktionen: Ges
 Dieser kurze Artikel soll nur meine zwei Cents zu dem Thema darstellen, denn schließlich muss jeder selbst entscheiden, was er/sie sich kauft; aber dank der aktuellen Release Preview: Nein Danke, Microsoft!
 Ich werde nun verstärkt auf Linux setzen.
 
-Nachtrag: Folgendes ist sicherlich nicht nur mir aufgefallen!
+Nachtrag: Folgendes ist sicherlich nicht nur mir aufgefallen...
 
 * Windows 95: Flop
 * Windows 98: Top
@@ -25,7 +25,5 @@ Nachtrag: Folgendes ist sicherlich nicht nur mir aufgefallen!
 * Windows Vista: Flop
 * Windows 7: Top
 * Windows 8: ...
-
-**Kommentar von BlackY, dem Betreiber meiner Partner-Website [BlackPhantom.DE](http://blackphantom.de)**: "Also ich werde auch noch ein paar Jährchen bei meinem heißgeliebten Windows 7 Home Premium bleiben. Das Metro-Zeugs gefällt mir auch nicht besonders gut. [...] Vielleicht will sich Microsoft nun auch auf dem Tabletmarkt beweisen?"
 
 **Update**: Mit Windows 8.1 hat Microsoft wieder einiges gerade gebogen und ich bin von der angenehmen Nutzbarkeit des Windows 8 "Nachfolgers" überrascht.
