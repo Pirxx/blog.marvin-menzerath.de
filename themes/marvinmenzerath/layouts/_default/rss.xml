@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xml:base="{{ $.Site.BaseURL }}" xmlns:content="http://purl.org/rss/1.0/modules/content/">
 	<channel>
-		<title>{{ with .Title }}Tag {{.}} auf {{ end }}{{ .Site.Title }}</title>
+		<title>{{ with .Title }}&quot;{{.}}&quot; auf {{ end }}{{ .Site.Title }}</title>
 		<link>{{ .Permalink }}</link>
-		<description>Die aktuellen Beiträge {{ with .Title }}mit dem Tag &quot;{{.}}&quot; {{ end }}auf {{ .Site.Title }}</description>
+		<description>Die aktuellen Beiträge {{ with .Title }}mit dem Tag &quot;{{.}}&quot; {{ end }}auf {{ .Site.Title }}.</description>
 		{{ with .Site.LanguageCode }}<language>{{.}}</language>{{end}}
 		{{ with .Site.Author.email }}<managingEditor>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</managingEditor>{{end}}
 		{{ with .Site.Author.email }}<webMaster>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</webMaster>{{end}}
@@ -22,7 +22,7 @@
 				{{ "]]>" | safeHTML }}</description>
 			<content:encoded>{{ "<![CDATA[" | safeHTML }}
 					{{ .Content }}
-					<p>Lesen Sie den gesamten Artikel unter <a href="{{ .Permalink }}">{{ .Permalink }}</a>.</p>
+					<p>Dieser Artikel erschien zuerst unter <a href="{{ .Permalink }}">{{ .Permalink }}</a>.</p>
 				{{ "]]>" | safeHTML }}</content:encoded>
 		</item>
 		{{ end }}
