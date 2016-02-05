@@ -3,7 +3,7 @@ RewriteCond %{HTTPS} !=on
 RewriteCond %{ENV:HTTPS} !=on
 RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
 
-Header set Strict-Transport-Security "max-age=15552000" env=HTTPS
+Header always set Strict-Transport-Security "max-age=15552000" env=HTTPS
 
 RewriteCond %{HTTP_HOST} !=menzerath.eu
 RewriteRule (.*) https://menzerath.eu/$1 [R=301,L]
