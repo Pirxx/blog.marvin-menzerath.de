@@ -7,7 +7,7 @@
 			{{ .Content }}
 			<ul>
 				{{ range $name, $taxonomy := .Site.Taxonomies.tag }}
-					<li><a href="/tag/{{ $name | urlize }}">{{ title $name }}</a></li>
+					<li><a href="{{ $.Site.BaseURL }}tag/{{ $name | urlize }}/">{{ title $name }}</a></li>
 				{{ end }}
 			</ul>
 		</section>
