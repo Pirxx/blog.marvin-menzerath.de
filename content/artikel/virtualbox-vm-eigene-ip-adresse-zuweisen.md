@@ -9,7 +9,7 @@ In diesem kurzen Artikel erfahren Sie, wie Sie einer virtuellen Maschine in Virt
 
 <!--more-->
 
-Ich gehe im folgenden davon aus, dass Sie bereits eine virtuelle Maschine eingerichtet und eventuell auch installiert haben.
+Ich gehe im Folgenden davon aus, dass Sie bereits eine virtuelle Maschine eingerichtet und eventuell auch installiert haben.
 
 ## Vorgehen
 * Öffnen Sie nun zuerst die Einstellungen der virtuellen Maschine, solange diese abgeschaltet ist.
