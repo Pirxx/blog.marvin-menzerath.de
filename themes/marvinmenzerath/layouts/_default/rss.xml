@@ -18,11 +18,11 @@
 			<guid>{{ .Permalink }}</guid>
 			<description>{{ "<![CDATA[" | safeHTML }}
 					{{ .Summary }}
-					<p>Lesen Sie den gesamten Artikel <b>{{ .Title }}</b> auf <a href="{{ .Site.BaseURL }}">{{ .Site.Title }} - {{ .Site.Params.description }}</a> unter <a href="{{ .Permalink }}">{{ .Permalink }}</a>.</p>
+					<p>Lesen Sie den gesamten Artikel unter <a href="{{ .Permalink }}">{{ .Permalink }}</a>.</p>
 				{{ "]]>" | safeHTML }}</description>
 			<content:encoded>{{ "<![CDATA[" | safeHTML }}
 					{{ .Content }}
-					<p>Der Artikel <b>{{ .Title }}</b> erschien zuerst auf <a href="{{ .Site.BaseURL }}">{{ .Site.Title }} - {{ .Site.Params.description }}</a> unter <a href="{{ .Permalink }}">{{ .Permalink }}</a>.</p>
+					<p>Dieser Artikel erschien zuerst unter <a href="{{ .Permalink }}">{{ .Permalink }}</a>.</p>
 				{{ "]]>" | safeHTML }}</content:encoded>
 		</item>
 		{{ end }}
