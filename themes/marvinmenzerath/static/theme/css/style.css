@@ -1,11 +1,11 @@
 /* ==========================================================================
-   0. Normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css
-   ========================================================================== */
+0. Normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css
+========================================================================== */
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 
 /* ==========================================================================
-   1. Fonts
-   ========================================================================== */
+1. Fonts
+========================================================================== */
 
 /* roboto-300 - latin */
 @font-face {
@@ -14,11 +14,11 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 	font-weight: 300;
 	src: url('../fonts/roboto-v15-latin-300.eot'); /* IE9 Compat Modes */
 	src: local('Roboto Light'), local('Roboto-Light'),
-		url('../fonts/roboto-v15-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		url('../fonts/roboto-v15-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/roboto-v15-latin-300.woff') format('woff'), /* Modern Browsers */
-		url('../fonts/roboto-v15-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/roboto-v15-latin-300.svg#Roboto') format('svg'); /* Legacy iOS */
+	url('../fonts/roboto-v15-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../fonts/roboto-v15-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../fonts/roboto-v15-latin-300.woff') format('woff'), /* Modern Browsers */
+	url('../fonts/roboto-v15-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('../fonts/roboto-v15-latin-300.svg#Roboto') format('svg'); /* Legacy iOS */
 }
 
 /* roboto-regular - latin */
@@ -28,11 +28,11 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 	font-weight: 400;
 	src: url('../fonts/roboto-v15-latin-regular.eot'); /* IE9 Compat Modes */
 	src: local('Roboto'), local('Roboto-Regular'),
-		url('../fonts/roboto-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		url('../fonts/roboto-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/roboto-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
-		url('../fonts/roboto-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/roboto-v15-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+	url('../fonts/roboto-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../fonts/roboto-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../fonts/roboto-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+	url('../fonts/roboto-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('../fonts/roboto-v15-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
 }
 
 /* roboto-700 - latin */
@@ -42,11 +42,11 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 	font-weight: 700;
 	src: url('../fonts/roboto-v15-latin-700.eot'); /* IE9 Compat Modes */
 	src: local('Roboto Bold'), local('Roboto-Bold'),
-		url('../fonts/roboto-v15-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		url('../fonts/roboto-v15-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/roboto-v15-latin-700.woff') format('woff'), /* Modern Browsers */
-		url('../fonts/roboto-v15-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/roboto-v15-latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
+	url('../fonts/roboto-v15-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../fonts/roboto-v15-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../fonts/roboto-v15-latin-700.woff') format('woff'), /* Modern Browsers */
+	url('../fonts/roboto-v15-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('../fonts/roboto-v15-latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
 }
 
 /* source-code-pro-regular - latin */
@@ -56,16 +56,16 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 	font-weight: 400;
 	src: url('../fonts/source-code-pro-v6-latin-regular.eot'); /* IE9 Compat Modes */
 	src: local('Source Code Pro'), local('SourceCodePro-Regular'),
-		url('../fonts/source-code-pro-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		url('../fonts/source-code-pro-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/source-code-pro-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
-		url('../fonts/source-code-pro-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/source-code-pro-v6-latin-regular.svg#SourceCodePro') format('svg'); /* Legacy iOS */
+	url('../fonts/source-code-pro-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../fonts/source-code-pro-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../fonts/source-code-pro-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
+	url('../fonts/source-code-pro-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('../fonts/source-code-pro-v6-latin-regular.svg#SourceCodePro') format('svg'); /* Legacy iOS */
 }
 
 /* ==========================================================================
-   2. General
-   ========================================================================== */
+2. General
+========================================================================== */
 html {
 	font-size: 62.5%;
 	height: 100%;
@@ -139,7 +139,7 @@ ol ol, ul ul, ul ol, ol ul {
 
 hr {
 	border: 0;
-	border-top: 1px solid #efefef;
+	border-top: 1px solid #EBF2F6;
 	display: block;
 	height: 1px;
 	margin: 1em 0;
@@ -205,7 +205,7 @@ pre {
 	background-size: 3em 3em;
 	border-left: .5em solid #358CCB;
 	font-size: .85em;
-	margin: .5em 0;
+	margin: .5em 0 1em 0;
 	outline: .1em solid #DFDFDF;
 	overflow: auto;
 	padding: 10px;
@@ -274,8 +274,8 @@ table.plain tbody > tr:nth-child(odd) > td, table.plain tbody > tr:nth-child(odd
 }
 
 /* ==========================================================================
-   3. General
-   ========================================================================== */
+3. General
+========================================================================== */
 .blog-title {
 	font-size: 3.5rem;
 	font-weight: bold;
@@ -413,11 +413,11 @@ main {
 }
 
 /* ==========================================================================
-   4. Post
-   ========================================================================== */
+4. Post
+========================================================================== */
 .post-content {
 	border-bottom: #EBF2F6 1px solid;
-	padding-bottom: 1rem;
+	padding-bottom: 0;
 	word-wrap: break-word;
 }
 
@@ -438,8 +438,8 @@ main {
 }
 
 /* ==========================================================================
-   5. Pagination
-   ========================================================================== */
+5. Pagination
+========================================================================== */
 .pagination {
 	color: #9EABB3;
 	font-size: 1.3rem;
@@ -475,8 +475,8 @@ main {
 }
 
 /* ==========================================================================
-   6. Footer
-   ========================================================================== */
+6. Footer
+========================================================================== */
 .site-footer {
 	color: #e6e9eb;
 	font-size: 1.3rem;
@@ -494,8 +494,8 @@ main {
 }
 
 /* ==========================================================================
-   7. PrismJS | http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+bash+batch+go+java+php+python+sql
-   ========================================================================== */
+7. PrismJS | http://prismjs.com/download.html?themes=prism-coy&languages=markup+css+clike+javascript+bash+batch+go+java+php+python+sql
+========================================================================== */
 .token.comment, .token.block-comment, .token.prolog, .token.doctype, .token.cdata {
 	color: #7D8B99;
 }
@@ -551,8 +551,8 @@ main {
 }
 
 /* ==========================================================================
-   8. Media Queries - Width smaller than 1023px
-   ========================================================================== */
+8. Media Queries - Width smaller than 1023px
+========================================================================== */
 @media only screen and (max-width: 1023px) {
 	blockquote {
 		margin-left: 0;
@@ -610,8 +610,8 @@ main {
 }
 
 /* ==========================================================================
-   9. Media Queries - Width smaller than 500px
-   ========================================================================== */
+9. Media Queries - Width smaller than 500px
+========================================================================== */
 @media only screen and (max-width: 500px) {
 	h1, h2 {
 		font-size: 2.4rem;
@@ -676,8 +676,8 @@ main {
 }
 
 /* ==========================================================================
-   10. Media Queries - Height smaller than 600px
-   ========================================================================== */
+10. Media Queries - Height smaller than 600px
+========================================================================== */
 @media only screen and (max-height: 600px) {
 	#sidebar-internal {
 		display: none;
