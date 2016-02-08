@@ -88,6 +88,6 @@ canonifyUrls    = true
 	weight     = 1
 
 [[menu.sites]]
-	name       = "Blogroll & Partner"
+	name       = "Blogroll"
 	identifier = "blogroll"
 	weight     = 1

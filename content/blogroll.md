@@ -7,16 +7,13 @@ type        = "page"
 +++
 
 ## Partnerseiten
-* [Nerdmind.DE](https://nerdmind.de)
-* [Ratgeber-Forum](http://ratgeber---forum.de)
-  Das Ratgeber-Forum setzt auf Einfachheit, Rat, Hilfe und Informationen.
+* [Ratgeber-Forum](https://ratgeber---forum.de)
 
 ## Lesenswert
-* [Fury's - Blog](http://0fury.de)
-  Pinguinhaltiges Geschwafel (aka mein privater Blog) seit 2012.
+* [Fury's - Blog](https://0fury.de)
+* [Nerdmind.DE](https://nerdmind.de)
 * [Patricks Blog](https://patrick246.de)
-  Patricks Blog
-* [Phishy's Blog](http://blog.phishy.de)
-  Coding, Gaming und Gedanken.
+* [Phishy's Blog](http://blog.phishy.de)[^1]
 * [Th3f.DE](https://th3f.de)
-  Ich kann weder gut schreiben, noch diskutieren... und machs trotzdem.
+
+[^1]: Zur Zeit leider nicht erreichbar.
