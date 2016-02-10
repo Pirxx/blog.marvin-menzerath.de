@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<title>{{ if .IsHome }}{{ .Site.Params.homeTitle }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}</title>
 	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else if .IsNode }}Dies sind alle Artikel, die mit dem Tag {{ .Title }} versehen wurden.{{ else }}{{ .Description }}{{ end }}">
+	{{ .Hugo.Generator }}
 	<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}theme/css/style.css">
 	<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}theme/css/font-awesome.min.css">
 	<link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.png">

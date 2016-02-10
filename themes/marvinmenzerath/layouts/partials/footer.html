@@ -7,3 +7,7 @@
 	<noscript><p><img src="//piwik.marvin-menzerath.de/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
 </body>
 </html>
+{{ "<!--" | safeHTML }}
+	Page Build Date: {{ .Now.Format "02.01.06 15:04:05" }}
+	Generator: Hugo {{ .Hugo.Version }}
+{{ "-->" | safeHTML }}
