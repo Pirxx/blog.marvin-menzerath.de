@@ -61,7 +61,6 @@ MYSQL_PASSWORD="rootpw"
 ####################
 ### PREPARATIONS ###
 ####################
-mkdir -p $BACKUP_DIR/tmp
 mkdir -p $BACKUP_TO/mysql
 mkdir -p $BACKUP_TO/webs
 mkdir -p $BACKUP_TO/mail
@@ -74,10 +73,8 @@ echo "Starte Datenbank-Backup..."
 
 databases=`mysql -u $MYSQL_USER -p$MYSQL_PASSWORD -e "SHOW DATABASES;" | grep -Ev "(Database|information_schema|performance_schema|mysql)"`
 for db in $databases; do
-	mysqldump -u $MYSQL_USER -p$MYSQL_PASSWORD $db | gzip > $BACKUP_DIR/tmp/backup.sql.gz
 	mkdir -p $BACKUP_TO/mysql/$db
-	gpg --encrypt --yes --recipient "$GPG_RECIPIENT_NAME" --output $BACKUP_TO/mysql/$db/$BACKUP_DATE.sql.gz.gpg $BACKUP_DIR/tmp/backup.sql.gz
-	rm $BACKUP_DIR/tmp/backup.sql.gz
+	mysqldump -u $MYSQL_USER -p$MYSQL_PASSWORD $db | gzip | gpg --encrypt --yes --recipient "$GPG_RECIPIENT_NAME" --output $BACKUP_TO/mysql/$db/$BACKUP_DATE.sql.gz.gpg
 done
 
 echo "Datenbank-Backup beendet!"
@@ -89,10 +86,8 @@ echo "Starte Daten-Backup..."
 
 dirs=( $(find /var/customers/webs/ -maxdepth 1 -type d -printf '%P\n') )
 for dir in "${dirs[@]}"; do
-	tar -zcf $BACKUP_DIR/tmp/backup.tar.gz /var/customers/webs/$dir
 	mkdir -p $BACKUP_TO/webs/$dir
-	gpg --encrypt --yes --recipient "$GPG_RECIPIENT_NAME" --output $BACKUP_TO/webs/$dir/$BACKUP_DATE.tar.gz.gpg $BACKUP_DIR/tmp/backup.tar.gz
-	rm $BACKUP_DIR/tmp/backup.tar.gz
+	tar -zcf - /var/customers/webs/$dir | gpg --encrypt --yes --recipient "$GPG_RECIPIENT_NAME" --output $BACKUP_TO/webs/$dir/$BACKUP_DATE.tar.gz.gpg
 done
 
 echo "Daten-Backup beendet!"
@@ -104,10 +99,8 @@ echo "Starte Mail-Backup..."
 
 dirs=( $(find /var/customers/mail/ -maxdepth 1 -type d -printf '%P\n') )
 for dir in "${dirs[@]}"; do
-	tar -zcf $BACKUP_DIR/tmp/backup.tar.gz /var/customers/mail/$dir
 	mkdir -p $BACKUP_TO/mail/$dir
-	gpg --encrypt --yes --recipient "$GPG_RECIPIENT_NAME" --output $BACKUP_TO/mail/$dir/$BACKUP_DATE.tar.gz.gpg $BACKUP_DIR/tmp/backup.tar.gz
-	rm $BACKUP_DIR/tmp/backup.tar.gz
+	tar -zcf - /var/customers/mail/$dir | gpg --encrypt --yes --recipient "$GPG_RECIPIENT_NAME" --output $BACKUP_TO/mail/$dir/$BACKUP_DATE.tar.gz.gpg
 done
 
 echo "Mail-Backup beendet!"
