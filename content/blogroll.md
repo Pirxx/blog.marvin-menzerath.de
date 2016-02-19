@@ -15,7 +15,5 @@ type        = "page"
 * [Hackerbit](http://hackerb.it)
 * [Nerdmind.DE](https://nerdmind.de)
 * [Patricks Blog](https://patrick246.de)
-* [Phishy's Blog](http://blog.phishy.de)[^1]
+* [Phishy's Blog](http://phishy.de)
 * [Th3f.DE](https://th3f.de)
-
-[^1]: Zur Zeit leider außer Betrieb.
