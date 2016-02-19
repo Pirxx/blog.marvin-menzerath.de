@@ -1,5 +1,5 @@
 +++
-title       = "GTA V auf dem Tablet: Steam In-Home Streaming vorgestellt"
+title       = "Steam In-Home Streaming vorgestellt"
 description = "Mit Steams In-Home Streaming können Sie einfach aktuelle Spiele-Hits wie GTA V auf Ihrem Fernseher oder Tablet-PC spielen."
 date        = "2016-01-30T00:10:00"
 tag         = ["Software", "Spiele"]
