@@ -20,30 +20,25 @@ canonifyUrls    = true
 	extensions     = ["hardLineBreak"]
 
 [[menu.social]]
-	name       = "Facebook"
-	identifier = "facebook"
-	url        = "https://facebook.com/menzerath.eu"
-	weight     = 1
-[[menu.social]]
 	name       = "Twitter"
 	identifier = "twitter"
 	url        = "https://twitter.com/MarvinMenzerath"
-	weight     = 2
+	weight     = 1
 [[menu.social]]
 	name       = "Telegram Channel"
 	identifier = "paper-plane"
 	url        = "https://telegram.me/menzerath_eu"
-	weight     = 3
+	weight     = 2
 [[menu.social]]
 	name       = "GitHub"
 	identifier = "github"
 	url        = "https://github.com/MarvinMenzerath"
-	weight     = 4
+	weight     = 3
 [[menu.social]]
 	name       = "Keybase"
 	identifier = "key"
 	url        = "https://keybase.io/marvinm"
-	weight     = 5
+	weight     = 4
 
 [[menu.tags]]
 	name       = "Android"
