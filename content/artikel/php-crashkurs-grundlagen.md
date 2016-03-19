@@ -238,4 +238,4 @@ Hier also nun das fertige Skript:
 ```
 
 ## Fazit
-PHP ist eine **mächtige, aber auch simple und leicht zu erlernende Sprache**, mit der sich sowohl mächtige CMS, aber auch [kleine Spielereien](/minecraft-achievement-generator/) programmieren lassen.
+PHP ist eine **mächtige, aber auch simple und leicht zu erlernende Sprache**, mit der sich sowohl mächtige CMS, aber auch [kleine Spielereien](https://github.com/MarvinMenzerath/MinecraftAchievementGenerator) programmieren lassen.
