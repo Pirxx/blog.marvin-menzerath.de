@@ -1,6 +1,6 @@
 +++
 title       = "Telegram Bots in Go Programmieren"
-description = ""
+description = "Wer sich mit der Telegram Bot Programmierung in Go auseinandersetzen will, erfährt in diesem kurzen Tutorial alles Wissenswerte über die Einrichtung und Programmierung eines einfachen Bots."
 date        = "2016-04-25T19:45:00"
 tag         = ["Golang", "Programmierung"]
 +++
