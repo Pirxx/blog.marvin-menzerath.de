@@ -8,8 +8,8 @@ canonifyUrls    = true
 	homeTitle   = "Home - Letzte Artikel"
 	description = "Tutorials & Reviews zur Technikwelt"
 	author      = "Marvin Menzerath"
-	impress     = "https://marvin-menzerath.de/impressum.html"
-	datenschutz = "https://marvin-menzerath.de/datenschutzerklaerung.html"
+	impress     = "/impressum/"
+	datenschutz = "/datenschutzerklaerung/"
 	githubRepo  = "https://github.com/MarvinMenzerath/menzerath.eu/"
 
 [taxonomies]
