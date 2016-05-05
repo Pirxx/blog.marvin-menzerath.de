@@ -43,4 +43,5 @@ Die Nutzer können die Installation der Cookies durch eine entsprechende Einstel
 
 ## Widerruf, Änderungen, Berichtigungen und Aktualisierungen
 Der Nutzer hat das Recht, auf Antrag unentgeltlich Auskunft zu erhalten über die personenbezogenen Daten, die über ihn gespeichert wurden. Zusätzlich hat der Nutzer das Recht auf Berichtigung unrichtiger Daten, Sperrung und Löschung seiner personenbezogenen Daten, soweit dem keine gesetzliche Aufbewahrungspflicht entgegensteht.
-Datenschutz-Muster von Rechtsanwalt Thomas Schwenke - I LAW it
+
+*Quelle:* [Datenschutz-Muster von Rechtsanwalt Thomas Schwenke - I LAW it](http://rechtsanwalt-schwenke.de/smmr-buch/datenschutz-muster-generator-fuer-webseiten-blogs-und-social-media/)

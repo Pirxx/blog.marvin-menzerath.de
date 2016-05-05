@@ -13,7 +13,7 @@ Branderweg 21
 52156 Monschau
 
 ## Kontakt:
-Telefon: 024729182864
+Telefon: 02472 9182864
 E-Mail:	`info [at] menzerath.eu`
 
 ## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
@@ -21,7 +21,7 @@ Marvin Menzerath
 Branderweg 21
 52156 Monschau
 
-*Quelle: [eRecht24.de](https://www.e-recht24.de)*
+*Quelle:* [eRecht24.de](https://www.e-recht24.de)
 
 ## Haftungsausschluss (Disclaimer)
 
