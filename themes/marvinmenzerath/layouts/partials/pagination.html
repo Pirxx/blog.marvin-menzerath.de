@@ -3,7 +3,7 @@
 		{{ if .Paginator.HasPrev }}
 			<a class="newer-posts" href="{{.Paginator.Prev.URL}}"><span>&larr; Neuere Artikel</span></a>
 		{{ end }}
-		<span class="page-number">Seite {{.Paginator.PageNumber}} von {{.Paginator.TotalPages}}</span>
+		<span class="page-number">Seite {{ .Paginator.PageNumber }} von {{ .Paginator.TotalPages }}</span>
 		{{ if .Paginator.HasNext }}
 			<a class="older-posts" href="{{.Paginator.Next.URL}}"><span>Ältere Artikel &rarr;</span></a>
 		{{ end }}

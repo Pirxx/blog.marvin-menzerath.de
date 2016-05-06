@@ -6,7 +6,7 @@
 			<div id="sidebar-external">
 				{{ range .Site.Menus.social }}
 					<a target="_blank" href="{{ .URL }}" title="{{ .Name }}"><i class="fa fa-{{ .Identifier }}"></i></a>
-				{{end}}
+				{{ end }}
 				<a target="_blank" href="{{ .Site.RSSLink }}" title="RSS-Feed"><i class="fa fa-rss"></i></a>
 			</div>
 			<a id="showNav" onclick="showNav()"><i class="fa fa-angle-down"></i> Navigation</a>
@@ -14,17 +14,17 @@
 			<div id="sidebar-internal">
 				<ul>
 					{{ range .Site.Menus.tags }}
-					<li><a href="{{ $.Site.BaseURL }}tag/{{ .Identifier }}/" title="{{ .Name }}"><i class="fa fa-tag"></i> {{ .Name }}</a></li>
-					{{end}}
+						<li><a href="{{ $.Site.BaseURL }}tag/{{ .Identifier }}/" title="{{ .Name }}"><i class="fa fa-tag"></i> {{ .Name }}</a></li>
+					{{ end }}
 					<li><a href="{{ $.Site.BaseURL }}tag/" title="Alle Tags"><i class="fa fa-tags"></i> Alle Tags</a></li>
 				</ul>
 				<ul>
 					{{ range .Site.Menus.sites }}
-					<li><a href="{{ $.Site.BaseURL }}{{ .Identifier }}/" title="{{ .Name }}"><i class="fa fa-link"></i> {{ .Name }}</a></li>
-					{{end}}
+						<li><a href="{{ $.Site.BaseURL }}{{ .Identifier }}/" title="{{ .Name }}"><i class="fa fa-link"></i> {{ .Name }}</a></li>
+					{{ end }}
 					{{ range .Site.Menus.code }}
-					<li><a target="_blank" href="{{ .URL }}" title="{{ .Name }}"><i class="fa fa-code"></i> {{ .Name }}</a></li>
-					{{end}}
+						<li><a target="_blank" href="{{ .URL }}" title="{{ .Name }}"><i class="fa fa-code"></i> {{ .Name }}</a></li>
+					{{ end }}
 				</ul>
 			</div>
 		</div>
