@@ -12,8 +12,9 @@ type        = "page"
 ## Lesenswert
 * [Fury's - Blog](https://0fury.de)
 * [GingerLabs](https://gingerlabs.de)
-* [Hackerbit](http://hackerb.it)
+* [Hackerbit](https://hackerb.it)
 * [Nerdmind.DE](https://nerdmind.de)
 * [Patricks Blog](https://patrick246.de)
 * [Phishy's Blog](http://phishy.de)
 * [Th3f.DE](https://th3f.de)
+* [wiki.freikowski](https://wiki.freikowski.com)
