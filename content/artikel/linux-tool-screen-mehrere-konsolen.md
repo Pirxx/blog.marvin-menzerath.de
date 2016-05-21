@@ -41,5 +41,10 @@ Um sich dann wieder mit der Sitzung zu verbinden, geben Sie einfach folgendes ei
 screen -r [Sitzungsname]
 ```
 
+Falls Sie aufgrund besserer Übersichtlichkeit einer neuen Sitzung einen benutzerdefinierten Namen zuweisen möchten, benutzen Sie die Option `-S`:
+```language-bash
+screen -S [Sitzungsname]
+```
+
 ## Fazit
 Das kleine kostenfreie Tool kann Ihnen den Alltag am Linux-Rechner stark vereinfachen und Ihre Arbeit auch beschleunigen. Auch die Wiederaufnahme von Sitzungen ist bei SSH-Verbindungen sehr nützlich.
