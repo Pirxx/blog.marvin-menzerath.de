@@ -15,7 +15,7 @@ Bedenken Sie bei der Wahl der Position des Raspberry Pis, dass dieser möglichst
 
 ## Installation & Einrichtung
 Nachdem der Raspberrry Pi nun seinen Platz gefunden hat und angeschlossen ist, verbinden Sie sich mittels SSH und aktualisieren Sie zuerst alle Pakete und den Kernel, damit die Unterstützung für möglichst jeden WLAN-Stick sichergestellt ist:
-```language-bash
+```bash
 sudo apt-get update
 sudo apt-get dist-upgrade
 sudo rpi-update
@@ -25,7 +25,7 @@ sudo reboot
 Prüfen Sie nun, ob der WLAN-Stick erkannt wird, indem Sie dazu `lsusb`  auf dem Terminal eingeben. Die Ausgabe der letzten Zeile sollte dann folgendermaßen (oder ähnlich) aussehen:
 ![Raspberry Pi Access Point 1: lsusb](/images/raspberry-pi-als-wlan-access-point-nutzen/AccessPointPi.png)
 Anschließend können Sie die nötigen Pakete **hostapd** und **dnsmasq** installieren:
-```
+```bash
 sudo apt-get install hostapd dnsmasq
 ```
 
@@ -34,9 +34,9 @@ Zuerst müssen Sie dem WLAN-Stick eine feste IP-Adresse zuweisen. Editieren Sie 
 ```bash
 auto lo
 iface lo inet loopback
- 
+
 # ...
- 
+
 iface wlan0 inet static
 address 192.168.2.1
 netmask 255.255.255.0
@@ -47,24 +47,24 @@ Wichtig ist, dass `wlan0` nur einmalig in dieser Datei genannt werden darf!
 Nun muss hostapd eingerichtet werden. Dazu editieren Sie zunächst die 10. Zeile in der Datei `/etc/default/hostapd`:
 ```bash
 # Defaults for hostapd initscript
-# 
+#
 # See /usr/share/doc/hostapd/README.Debian for information about alternative
 # methods of managing hostapd.
-# 
+#
 # Uncomment and set DAEMON_CONF to the absolute path of a hostapd configuration
 # file and hostapd will be started during system boot. An example configuration
 # file can be found at /usr/share/doc/hostapd/examples/hostapd.conf.gz
-# 
+#
 DAEMON_CONF="/etc/hostapd/hostapd.conf"
 
 # Additional daemon options to be appended to hostapd command:-
 #       -d   show more debug messages (-dd for even more)
 #       -K   include key data in debug messages
 #       -t   include timestamps in some debug messages
-# 
+#
 # Note that -B (daemon mode) and -P (pidfile) options are automatically
 # configured by the init.d script and must not be added to DAEMON_OPTS.
-# 
+#
 # DAEMON_OPTS=""
 ```
 
@@ -75,24 +75,24 @@ Die wichtigste Anpassung ist die des verwendeten Treibers. Bei den meisten Edima
 interface=wlan0
 # Realtek-Treiber, muss bei anderem Hersteller angepasst werden
 driver=rtl871xdrv
- 
+
 # Deamon-Einstellungen
 ctrl_interface=/var/run/hostapd
 ctrl_interface_group=0
- 
+
 # WLAN-Konfiguration
 ssid=Raspberry Pi
 channel=1
 hw_mode=g
 ieee80211n=1
- 
+
 # WLAN-Sicherheit (Passwort unbedingt anpassen!)
 wpa=2
 wpa_passphrase=passwort123456
 wpa_key_mgmt=WPA-PSK
 wpa_pairwise=CCMP
 rsn_pairwise=CCMP
- 
+
 # Ländercode
 country_code=DE
 ```
@@ -100,24 +100,24 @@ country_code=DE
 Zum Abschluss muss ein Client noch eine IP-Adresse erhalten, wenn er sich beim Access Point anmeldet. Dazu editieren Sie die dnsmasq-Konfiguration unter `/etc/dnsmasq.conf` folgendermaßen:
 ```bash
 # Configuration file for dnsmasq.
- 
+
 # ...
- 
+
 # If you want dnsmasq to listen for DHCP and DNS requests only on
 # specified interfaces (and the loopback) give the name of the
 # interface (eg eth0) here.
 # Repeat the line for more than one interface.
 interface=wlan0
- 
+
 # ...
- 
+
 # Uncomment this to enable the integrated DHCP server, you need
 # to supply the range of addresses available for lease and optionally
 # a lease time. If you have more than one network, you will need to
 # repeat this for each network on which you want to supply DHCP
 # service.
 dhcp-range=192.168.2.2,192.168.2.100,255.255.255.0,12h
- 
+
 # ...
 ```
 
@@ -135,7 +135,7 @@ Damit nun auch die WLAN-Clients eine Verbindung zum Internet erhalten, müssen S
 ```
 
 Und lesen Sie die Datei anschließend erneut ein:
-```
+```bash
 sudo sysctl -p
 ```
 

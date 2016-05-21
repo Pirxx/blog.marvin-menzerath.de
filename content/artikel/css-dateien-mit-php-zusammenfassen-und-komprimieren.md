@@ -11,7 +11,7 @@ Für eine bessere Performance und somit eine flüssigere Seitendarstellung empfi
 
 Legen Sie zunächst eine neue PHP-Datei im Verzeichnis **über** dem Verzeichnis mit den CSS-Dateien an, welche am besten den Namen `css.php` trägt.
 Die Verzeichnisstruktur sollte dabei folgendermaßen aussehen:
-```language-markup
+```markup
 style
 	|__css
 		|__bootstrap.css

@@ -19,7 +19,7 @@ sudo apt-get update
 sudo apt-get install screen
 ```
 Bestätigen Sie nun noch die Installation mit `y` oder `j` und warten Sie, bis die Installation abgeschlossen ist.
- 
+
 ## Nutzung des Tools
 Um "screen" zu starten, geben Sie einfach `screen` auf der Konsole ein, und Sie landen (eher unbemerkt) auf einer weiteren Shell. Dort können Sie nun ganz normal mit der Konsole arbeiten und folgende Tastenkombinationen zur Steuerung des Tools verwenden.
 Dabei ist `Strg + A` immer der Aufruf des Tools und der nachfolgende Buchstabe der eigentliche Befehl:
@@ -37,12 +37,13 @@ Die Ausgabe sieht dann folgendermaßen aus:
 ![Linux-Tool Screen](/images/linux-tool-screen-mehrere-konsolen/Screen.png)
 
 Um sich dann wieder mit der Sitzung zu verbinden, geben Sie einfach folgendes ein:
-```language-bash
+```bash
 screen -r [Sitzungsname]
 ```
 
-Falls Sie aufgrund besserer Übersichtlichkeit einer neuen Sitzung einen benutzerdefinierten Namen zuweisen möchten, benutzen Sie die Option `-S`:
-```language-bash
+### Eigener Sitzungsname
+Falls Sie aufgrund besserer Übersichtlichkeit einer neuen Sitzung einen benutzerdefinierten Namen zuweisen möchten, benutzen Sie die Option `-S` beim Programmaufruf:
+```bash
 screen -S [Sitzungsname]
 ```
 
