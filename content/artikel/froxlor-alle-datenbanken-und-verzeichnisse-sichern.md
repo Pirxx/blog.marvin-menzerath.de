@@ -52,7 +52,6 @@ Somit wird das Backup-Skript nun jede Nacht um 3 Uhr aufgerufen.
 ##############################
 ### AUTHENTICATION & PATHS ###
 ##############################
-BACKUP_DIR="/home/user/backup"
 BACKUP_TO="/home/user/googledrive/backups/mein-server"
 GPG_RECIPIENT_NAME="Nutzername des GPG-Schlüssel-Besitzers"
 MYSQL_USER="root"
@@ -61,20 +60,19 @@ MYSQL_PASSWORD="rootpw"
 ####################
 ### PREPARATIONS ###
 ####################
-mkdir -p $BACKUP_TO/mysql
-mkdir -p $BACKUP_TO/webs
-mkdir -p $BACKUP_TO/mail
 BACKUP_DATE=( $(date +"%Y-%m-%d_%H-%M") )
+mkdir -p "$BACKUP_TO/$BACKUP_DATE/mysql"
+mkdir -p "$BACKUP_TO/$BACKUP_DATE/webs"
+mkdir -p "$BACKUP_TO/$BACKUP_DATE/mail"
 
 ####################
 ### MYSQL-BACKUP ###
 ####################
 echo "Starte Datenbank-Backup..."
 
-databases=`mysql -u $MYSQL_USER -p$MYSQL_PASSWORD -e "SHOW DATABASES;" | grep -Ev "(Database|information_schema|performance_schema|mysql)"`
+databases=$(mysql -u $MYSQL_USER -p$MYSQL_PASSWORD -e "SHOW DATABASES;" | grep -Ev "(Database|information_schema|performance_schema|mysql)")
 for db in $databases; do
-	mkdir -p $BACKUP_TO/mysql/$db
-	mysqldump -u $MYSQL_USER -p$MYSQL_PASSWORD $db | gzip | gpg --encrypt --yes --recipient "$GPG_RECIPIENT_NAME" --output $BACKUP_TO/mysql/$db/$BACKUP_DATE.sql.gz.gpg
+	mysqldump -u $MYSQL_USER -p$MYSQL_PASSWORD $db | gzip | gpg --encrypt --yes --recipient "$GPG_RECIPIENT_NAME" --output "$BACKUP_TO/$BACKUP_DATE/mysql/$db.sql.gz.gpg"
 done
 
 echo "Datenbank-Backup beendet!"
@@ -86,8 +84,7 @@ echo "Starte Daten-Backup..."
 
 dirs=( $(find /var/customers/webs/ -maxdepth 1 -type d -printf '%P\n') )
 for dir in "${dirs[@]}"; do
-	mkdir -p $BACKUP_TO/webs/$dir
-	tar -zcf - /var/customers/webs/$dir | gpg --encrypt --yes --recipient "$GPG_RECIPIENT_NAME" --output $BACKUP_TO/webs/$dir/$BACKUP_DATE.tar.gz.gpg
+	tar -zcf - "/var/customers/webs/$dir" | gpg --encrypt --yes --recipient "$GPG_RECIPIENT_NAME" --output "$BACKUP_TO/$BACKUP_DATE/webs/$dir.tar.gz.gpg"
 done
 
 echo "Daten-Backup beendet!"
@@ -99,8 +96,7 @@ echo "Starte Mail-Backup..."
 
 dirs=( $(find /var/customers/mail/ -maxdepth 1 -type d -printf '%P\n') )
 for dir in "${dirs[@]}"; do
-	mkdir -p $BACKUP_TO/mail/$dir
-	tar -zcf - /var/customers/mail/$dir | gpg --encrypt --yes --recipient "$GPG_RECIPIENT_NAME" --output $BACKUP_TO/mail/$dir/$BACKUP_DATE.tar.gz.gpg
+	tar -zcf - "/var/customers/mail/$dir" | gpg --encrypt --yes --recipient "$GPG_RECIPIENT_NAME" --output "$BACKUP_TO/$BACKUP_DATE/mail/$dir.tar.gz.gpg"
 done
 
 echo "Mail-Backup beendet!"
@@ -111,7 +107,7 @@ echo "Mail-Backup beendet!"
 echo "Starte Upload..."
 
 drive push -no-clobber -quiet $BACKUP_TO
-rm -rf $BACKUP_TO/*
+rm -rf "${BACKUP_TO:?}/"*
 
 echo "Backup beendet!"
 ```
@@ -119,7 +115,6 @@ echo "Backup beendet!"
 ### Erläuterung der Einstellungen
 | Name                 | Verwendung                                                                    |
 |----------------------|-------------------------------------------------------------------------------|
-| `BACKUP_DIR`         | Verzeichnis, in dem alle Dateien und Verzeichnisse des Backup-Skripts liegen. |
 | `BACKUP_TO`          | Verzeichnis auf dem Cloud-Speicher, wo die Backups abgelegt werden sollen.    |
 | `GPG_RECIPIENT_NAME` | Der Nutzername, der im verwendeten GPG-Schlüssel eingetragen ist.             |
 | `MYSQL_USER`         | Nutzer, der Zugriff auf alle MySQL-Datenbanken hat.                           |
