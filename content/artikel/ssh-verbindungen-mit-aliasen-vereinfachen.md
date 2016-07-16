@@ -9,7 +9,7 @@ Wer sich häufig mit verschiedenen Hosts via SSH verbindet, muss nicht immer wie
 
 <!--more-->
 
-Anstatt bei jeder Verbindung etwas wie `ssh myuser@host01.mycompany.com -p 1234` einzutippen, lassen sich die meist genutzten Konfigurationen in der `~./ssh/config`-Datei festlegen.
+Anstatt bei jeder Verbindung etwas wie `ssh myuser@host01.mycompany.com -p 1234` einzutippen, lassen sich die meist genutzten Konfigurationen in der `~/.ssh/config`-Datei festlegen.
 
 ## Vorgehensweise
 Öffnen Sie zunächst oben genannte Datei mit einem Text-Editor Ihrer Wahl. Unter Umständen müssen Sie diese Datei vorher noch anlegen.
@@ -24,7 +24,7 @@ Host hostname
 
 Sollten Sie eine Keyfile zur Authentifizierung nutzen wollen, so können Sie noch eine solche Zeile hinzufügen:
 ```
-IdentityFile ~./ssh/id_rsa
+IdentityFile ~/.ssh/id_rsa
 ```
 
 Nun nur noch die Datei abspeichern und Sie können die Verbindung zum Host mittels `ssh hostname` öffnen.
@@ -35,10 +35,10 @@ In folgendem Beispiel finden Sie zwei Konfigurationen, mit denen man sich mittel
 Host capella
 	HostName capella.uberspace.de
 	User capellauser1
-	IdentityFile ~./ssh/id_rsa
+	IdentityFile ~/.ssh/id_rsa
 
 Host diphda
 	HostName diphda.uberspace.de
 	User diphdauser1
-	IdentityFile ~./ssh/id_rsa
+	IdentityFile ~/.ssh/id_rsa
 ```
