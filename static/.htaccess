@@ -1,6 +1,6 @@
 RewriteEngine On
-RewriteCond %{HTTP_HOST} !=menzerath.eu
-RewriteRule (.*) https://menzerath.eu/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} !=blog.marvin-menzerath.de
+RewriteRule (.*) https://blog.marvin-menzerath.de/$1 [R=301,L]
 
 Header always set Strict-Transport-Security "max-age=15552000" env=HTTPS
 
