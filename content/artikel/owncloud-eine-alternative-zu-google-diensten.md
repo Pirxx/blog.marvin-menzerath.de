@@ -10,7 +10,7 @@ Die Google-Dienste sind unglaublich praktisch: Dokumente, Mail, Kalender, Kontak
 <!--more-->
 
 ## Was ist OwnCloud eigentlich?
-[OwnCloud](http://owncloud.org/) ist eine Cloud-Umgebung zum selbst-hosten, die von mehreren Nutzern gleichzeitig genutzt werden kann und unter anderem folgende Features bietet: 
+[OwnCloud](http://owncloud.org/) ist eine Cloud-Umgebung zum selbst-hosten, die von mehreren Nutzern gleichzeitig genutzt werden kann und unter anderem folgende Features bietet:
 
 * Dateimanager (inkl. Upload- & Teilen-Funktionen)
 * WebDav-Zugriff
@@ -32,7 +32,7 @@ Als Dateiablage und zum Teilen von Dateien ist OwnCloud zweifelsfrei geeignet. D
 
 Mit Google Docs, bzw. dem Google Drive lassen sich Dokumente, Tabellen und Präsentationen gemeinsam erstellen und bearbeiten. OwnCloud lässt die (gemeinsame) Bearbeitung von Dokumenten jedoch aktuell nur in einem eher spärlich ausgestatteten Editor zu. Die wichtigsten Funktionen sind zwar vorhanden, dennoch ist dies (natürlich) kein Ersatz für eine vollständige Textverarbeitung wie LibreOffice oder Microsoft Office sie mitbringt.
 ![OwnCloud: Dokumente](/images/owncloud-eine-alternative-zu-google-diensten/Dokument.png)
-OwnCloud lässt außerdem die Wiedergabe von Präsentationen zu, die mit [impress.js](http://bartaz.github.io/impress.js) erstellt wurden.
+OwnCloud lässt außerdem die Wiedergabe von Präsentationen zu, die mit [impress.js](https://github.com/impress/impress.js/) erstellt wurden.
 
 ### Kalender vs Google Kalender
 Die Kalender-Applikationen sind nicht allzu verschieden: Es lassen sich mehrere Kalender mit unterschiedlichen Farben anlegen, die wiederum beliebig viele (sich wiederholende) Termine beinhalten können. Ein Umstieg ist hier sehr einfach: Bei Google den jeweiligen Kalender als iCal-Datei herunterladen, in der OwnCloud hochladen und in einen (neuen) Kalender importieren. Fertig.
