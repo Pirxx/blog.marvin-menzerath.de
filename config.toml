@@ -27,7 +27,7 @@ canonifyUrls    = true
 [[menu.social]]
 	name       = "Telegram Channel"
 	identifier = "paper-plane"
-	url        = "https://telegram.me/menzerath_eu"
+	url        = "https://telegram.me/marvinmenzerath_blog"
 	weight     = 2
 [[menu.social]]
 	name       = "GitHub"
