@@ -1,7 +1,7 @@
 # menzerath.eu
 Mein Technikblog - powered by Hugo. Tutorials & Reviews zur Technikwelt.
 
-==> **[Klick](https://menzerath.eu)** <==
+==> **[Klick](https://blog.marvin-menzerath.de)** <==
 
 ## Technik
 Diese Seite nutzt [Hugo](https://github.com/spf13/hugo), einen Generator für statische Webseiten.  
