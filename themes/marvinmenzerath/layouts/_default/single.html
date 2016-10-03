@@ -1,6 +1,42 @@
 {{ partial "header.html" . }}
 {{ partial "sidebar.html" . }}
 <main>
+	<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "BlogPosting",
+		"headline": {{ .Title | safeHTML }},
+		"datePublished": {{ .Date.Format "2006-01-02 15:04:05" }},
+		"dateModified": {{ if .Lastmod }}{{ .Lastmod.Format "2006-01-02 15:04:05" }}{{ else }}{{ .Date.Format "2006-01-02 15:04:05" }}{{ end }},
+		"description": {{ .Summary | plainify }},
+		"url": {{ .Permalink | safeHTML }},
+		"keywords": "{{ delimit .Params.tag ", " }}",
+		"image": {
+    		"@type": "ImageObject",
+    		"url": {{ "/favicon.png" | absURL }},
+			"height": 696,
+			"width": 696
+		},
+		"author": {
+			"@type": "Person",
+			"name": {{ .Site.Params.author }}
+		},
+		"publisher": {
+			"@type": "Organization",
+			"name": {{ .Site.Params.author }},
+			"logo": {
+	    		"@type": "ImageObject",
+	    		"url": {{ "/publisher.png" | absURL }},
+				"height": 60,
+				"width": 600
+			}
+		},
+		"mainEntityOfPage":{
+			"@type": "WebPage",
+			"@id": {{ .Site.BaseURL }}
+		}
+	}
+	</script>
 	<article class="post">
 		<h1 class="post-title">{{ .Title }}</h1>
 		<div class="post-meta">
