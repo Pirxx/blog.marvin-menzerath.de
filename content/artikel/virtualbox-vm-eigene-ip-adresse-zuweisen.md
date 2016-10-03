@@ -2,6 +2,7 @@
 title       = "VirtualBox: VM eigene IP-Adresse zuweisen"
 description = "Hier erfahren Sie, wie Sie einer virtuellen Maschine in VirtualBox eine eigene IP-Adresse zuweisen können."
 date        = "2016-02-08T03:05:00"
+lastmod     = "2016-02-08T03:10:00"
 tag         = ["Software", "VirtualBox"]
 +++
 

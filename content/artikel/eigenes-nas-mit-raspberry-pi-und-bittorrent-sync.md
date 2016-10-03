@@ -2,6 +2,7 @@
 title       = "Eigenes NAS mit Raspberry Pi und Bittorrent Sync"
 description = "Ein eigenes kostenfreies NAS können Sie schon mit einem Raspberry Pi und der kostenlosen Software Bittorrent Sync in Ihrer Wohnung betreiben."
 date        = "2013-12-11T12:42:00"
+lastmod     = "2016-10-03T15:41:00"
 tag         = ["NAS", "Raspberry Pi"]
 +++
 

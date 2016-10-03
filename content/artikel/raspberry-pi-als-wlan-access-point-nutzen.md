@@ -2,6 +2,7 @@
 title       = "Raspberry Pi als WLAN Access Point nutzen"
 description = "Hier erfahren Sie, wie einfach Sie einen WLAN Access-Point mit einem Raspberry Pi und einem kostengünstigen WLAN-Stick aufbauen können."
 date        = "2014-06-27T16:00:00"
+lastmod     = "2016-05-21T19:11:00"
 tag         = ["Access Point", "Raspberry Pi", "WLAN"]
 +++
 

@@ -2,6 +2,7 @@
 title       = "Implementation eines einfachen Webservers in Java (Facharbeit)"
 description = "In diesem Artikel lesen Sie den zweiten Teil meiner Facharbeit zur Implementation, bzw. Entwicklung eines einfachen Webservers in Java."
 date        = "2014-05-12T19:15:00"
+lastmod     = "2016-10-03T14:06:00"
 tag         = ["Facharbeit", "HTTP-Protokoll", "Java", "Webserver", "Programmierung"]
 +++
 

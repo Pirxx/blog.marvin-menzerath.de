@@ -2,6 +2,7 @@
 title       = "Wie funktioniert das HTTP-Protokoll? (Facharbeit)"
 description = "In diesem Artikel lesen Sie meine Facharbeit zur Funktionsweise des HTTP-Protokolls, auf welchem unter anderem auch der tägliche Internetverkehr basiert."
 date        = "2014-05-12T19:15:00"
+lastmod     = "2016-10-03T14:06:00"
 tag         = ["Facharbeit", "HTTP-Protokoll"]
 +++
 

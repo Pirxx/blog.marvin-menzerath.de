@@ -2,6 +2,7 @@
 title       = "PHP: Fsockopen-Beispiele"
 description = "Dieser Artikel beleuchtet die Vorteile der PHP-Funktion fsockopen und zeigt einfache Beispiele zur Verwendung dieser Funktion."
 date        = "2012-12-23T19:00:00"
+lastmod     = "2016-10-03T14:06:00"
 tag         = ["PHP", "Webmaster"]
 +++
 

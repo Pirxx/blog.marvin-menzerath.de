@@ -2,6 +2,7 @@
 title       = "OwnCloud: Eine Alternative zu Google-Diensten?"
 description = "Die Google-Dienste sind zwar praktisch, aber keineswegs datenschutzfreundlich. Mit OwnCloud haben Sie aber selbst die Kontrolle über alle Ihre Daten."
 date        = "2014-03-01T19:37:00"
+lastmod     = "2016-10-03T15:39:00"
 tag         = ["Kostenfrei", "OwnCloud", "Software", "Webmaster"]
 +++
 

@@ -2,6 +2,7 @@
 title       = "Die besten Computerspiele 2015"
 description = "In diesem Artikel behandle ich die besten Computerspiele, die 2015 für den PC auf Steam erschienen sind."
 date        = "2015-12-21T17:05:00"
+lastmod     = "2016-10-03T14:06:00"
 tag         = ["Ranking", "Spiele"]
 +++
 

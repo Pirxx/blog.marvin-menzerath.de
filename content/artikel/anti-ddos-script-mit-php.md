@@ -2,6 +2,7 @@
 title       = "Anti-DDoS Script mit PHP und MySQL"
 description = "DDoS-Attacken sind eine Plage, doch mit diesem einfachen Anti-DDoS Script für Ihre Website haben Sie einen kleinen Schutz gegen solche Attacken."
 date        = "2012-06-05T22:00:00"
+lastmod     = "2016-10-03T14:06:00"
 tag         = ["PHP", "Sicherheit", "Webmaster"]
 +++
 

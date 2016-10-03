@@ -2,6 +2,7 @@
 title       = "Distrochooser: Welches Linux für wen?"
 description = "Gerade als Linux-Neuling steht man oft vor der Frage: Welche Distribution ist für mich geeignet? Der Distrochooser bietet eine einfache Auswahlmöglichkeit."
 date        = "2015-05-22T16:26:00"
+lastmod     = "2016-10-03T14:07:00"
 tag         = ["Linux", "Tipp", "Vorstellung"]
 +++
 

@@ -2,6 +2,7 @@
 title       = "CSS-Dateien mit PHP zusammenfassen und komprimieren"
 description = "Hier erfahren Sie, wie Sie sehr einfach mit PHP mehrere CSS-Dateien in eine einzige Datei zusammenfassen und komprimieren können."
 date        = "2014-09-07T17:52:00"
+lastmod     = "2016-05-21T19:11:00"
 tag         = ["CSS", "PHP", "Webmaster"]
 +++
 

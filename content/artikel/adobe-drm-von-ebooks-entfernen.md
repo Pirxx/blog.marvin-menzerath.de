@@ -2,6 +2,7 @@
 title       = "Adobe DRM von eBooks entfernen"
 description = "Mit einem Calibre Plugin könnte man einfach und ohne großen Aufwand das Adobe DRM von gekauften eBooks entfernen."
 date        = "2015-12-21T20:40:00"
+lastmod     = "2015-12-22T11:41:00"
 tag         = ["DRM", "eBook", "Software"]
 +++
 

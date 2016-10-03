@@ -2,6 +2,7 @@
 title       = "SSH-Verbindungen mit Aliasen vereinfachen"
 description = "Mittels Aliasen lassen sich komplexe SSH Verbindungskonfigurationen abspeichern und schnell mit einem simplen Befehl starten."
 date        = "2015-12-12T20:20:00"
+lastmod     = "2016-07-16T23:52:00"
 tag         = ["Linux", "Server", "Software", "Tipp"]
 +++
 

@@ -2,6 +2,7 @@
 title       = "Xbox One Controller blockiert Maus- und Tastatureingaben"
 description = "Seit Kurzem blockiert die Verwendung des Xbox One Controllers die Funktion von Maus und Tastatur. Abhilfe schafft die Installation einer älteren Treiber-Version."
 date        = "2016-03-20T00:01:00"
+lastmod     = "2016-08-14T22:31:00"
 tag         = ["Spiele", "Windows"]
 +++
 

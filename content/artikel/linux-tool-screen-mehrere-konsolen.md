@@ -2,6 +2,7 @@
 title       = "Linux-Tool Screen: Mehrere Konsolen in einem Fenster"
 description = "Mit dem Linux-Tool Screen können Sie mehrere Konsolen-Fenster via SSH öffnen und auch Sitzungen schließen, wiederaufnehmen und einiges mehr."
 date        = "2013-05-04T12:14:00"
+lastmod     = "2016-05-21T19:11:00"
 tag         = ["Linux", "Software"]
 +++
 

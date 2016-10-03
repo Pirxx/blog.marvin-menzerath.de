@@ -2,6 +2,7 @@
 title       = "HTML-Crashkurs - Einführung in die Grundlagen der Website-Erstellung"
 description = "In diesem Tutorial zeige ich Ihnen die HTML-Grundlagen mit welchen Sie bereits eine eigene kleine Website gestalten können."
 date        = "2013-03-03T19:00:00"
+lastmod     = "2016-10-03T14:06:00"
 tag         = ["Grundlagen", "HTML", "Webmaster"]
 +++
 

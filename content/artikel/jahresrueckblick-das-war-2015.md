@@ -2,6 +2,7 @@
 title       = "Jahresrückblick: Das war 2015"
 description = "Dieser Beitrag ist ein kleiner Rückblick auf das Jahr 2015 im Bezug auf diesen Blog und weitere meiner Projekte."
 date        = "2015-12-31T15:00:00"
+lastmod     = "2016-10-03T14:06:00"
 tag         = ["Offtopic"]
 +++
 

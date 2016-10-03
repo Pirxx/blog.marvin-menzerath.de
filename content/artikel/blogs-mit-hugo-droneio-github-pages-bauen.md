@@ -2,6 +2,7 @@
 title       = "Blogs mit Hugo, Drone.io und GitHub Pages bauen"
 description = "Wer seinen Blog auf Basis des Generators \"Hugo\" betreibt, kann diesen dank GitHub Pages und Drone.io automatisiert bauen und ohne Kosten hosten lassen."
 date        = "2015-12-20T22:15:00"
+lastmod     = "2015-12-22T15:15:00"
 tag         = ["Drone.io", "GitHub", "Webmaster"]
 +++
 

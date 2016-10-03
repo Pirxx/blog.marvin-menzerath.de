@@ -2,7 +2,8 @@
 title       = "Froxlor: Alle Datenbanken, Web-Verzeichnisse und Mails sichern"
 description = "Mit diesem Shell-Skript können Sie Backups aller Datenbanken, Web-Verzeichnisse und E-Mail-Konten in Froxlor erstellen und verschlüsselt hochladen lassen."
 date        = "2014-03-01T13:56:00"
-tag         = ["Dropbox", "Froxlor", "Server", "Webmaster"]
+lastmod     = "2016-06-10T20:25:00"
+tag         = ["Froxlor", "Server", "Webmaster"]
 +++
 
 Um alle Daten einer Froxlor-Installation zu sichern, benötigt man ein Skript, welches sowohl die Datenbanken, Kunden-Verzeichnisse und alle Mails sichert und danach auf Wunsch verschlüsselt bei einem Cloud-Speicherdienst hochlädt. Mit diesem einfachen Bash-Skript geschieht die Sicherung einfach und schnell über Nacht.

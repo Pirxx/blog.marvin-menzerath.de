@@ -2,6 +2,7 @@
 title       = "PHP-Crashkurs - Grundlagen und ein erstes Skript"
 description = "Mit PHP können Sie interaktive Websites gestalten und direkt auf Eingaben reagieren. Hier lernen Sie die PHP-Grundlagen und schreiben Ihr erstes Skript."
 date        = "2013-03-10T19:00:00"
+lastmod     = "2016-03-19T23:35:00"
 tag         = ["Grundlagen", "PHP", "Webmaster"]
 +++
 
