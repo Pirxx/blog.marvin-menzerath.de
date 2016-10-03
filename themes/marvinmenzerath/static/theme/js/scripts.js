@@ -2,17 +2,10 @@
 window.cookieconsent_options = {"message":"Durch den Besuch dieser Webseite erklären Sie sich damit einverstanden, dass Cookies auf Ihrem Endgerät gespeichert werden dürfen.","dismiss":"Alles klar!","learnMore":"Mehr Informationen","link":"https://blog.marvin-menzerath.de/datenschutzerklaerung/","theme":"/theme/css/cookieconsent.min.css"};
 
 /* Navigation */
-function showNav() {
-	$("#sidebar-internal").show();
-	$("#showNav").hide();
-	$("#hideNav").css("display", "block");
-}
-
-function hideNav() {
-	$("#sidebar-internal").hide();
-	$("#hideNav").hide();
-	$("#showNav").show();
-}
+$("#toggleNav").click(function() {
+	$("#sidebar-internal").toggle(200);
+	$("#toggleNavIcon").toggleClass("fa-angle-down fa-angle-up");
+});
 
 /* Piwik */
 var _paq = _paq || [];

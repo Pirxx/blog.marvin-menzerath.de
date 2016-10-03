@@ -341,9 +341,10 @@ main {
 	width: 18px;
 }
 
-#showNav, #hideNav {
+#toggleNav {
 	cursor: pointer;
 	display: none;
+	font-size: 16px;
 	text-align: center;
 }
 
@@ -517,7 +518,7 @@ main {
 		display: none;
 	}
 
-	#showNav {
+	#toggleNav {
 		display: block;
 	}
 
@@ -561,7 +562,7 @@ main {
 		display: none;
 	}
 
-	#showNav {
+	#toggleNav {
 		display: block;
 	}
 }
