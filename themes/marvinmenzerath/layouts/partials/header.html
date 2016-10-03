@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<title>{{ if .IsHome }}{{ .Site.Params.homeTitle }}{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}</title>
+	<title>{{ if .IsHome }}{{ .Site.Params.homeTitle }}{{ else if eq .Title "404 Page not found" }}Fehler 404: Seite nicht gefunden{{ else }}{{ .Title }}{{ end }} | {{ .Site.Title }}</title>
 	<meta name="description" content="{{ if .IsHome }}{{ .Site.Params.description }}{{ else if .IsNode }}Dies sind alle Artikel, die mit dem Tag {{ .Title }} versehen wurden.{{ else }}{{ .Description }}{{ end }}">
 	{{ .Hugo.Generator }}
 	<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}theme/css/normalize.css">
