@@ -29,7 +29,7 @@ Letztere befinden sich zusätzlich auch hinter einem Druck auf den "Über den Di
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Fazit
-Der [Distrochooser](http://distrochooser.de/) bietet mit den aktuell verfügbaren 24 Distributionen eine gute Übersicht und eine schnelle Auswahlhilfe für alle zukünftigen Linux-Nutzer. Auch wenn nicht immer ein zu 100% passendes Ergebnis herauskommen kann, bietet das [Open-Source-Projekt](https://github.com/squarerootfury/distrochooser) einen guten Einstieg.
+Der [Distrochooser](http://distrochooser.de) bietet mit den aktuell verfügbaren 24 Distributionen eine gute Übersicht und eine schnelle Auswahlhilfe für alle zukünftigen Linux-Nutzer. Auch wenn nicht immer ein zu 100% passendes Ergebnis herauskommen kann, bietet das [Open-Source-Projekt](https://github.com/squarerootfury/distrochooser) einen guten Einstieg.
 
 > Der Distrochooser macht nur Vorschläge und soll eine Orientierungshilfe bieten, um sich als Anfänger in der Welt von Linux orientieren zu können. Daher kann es passieren, dass nicht ganz passende Ergebnisse geliefert werden, wenn die Komplexität der gegebenen Antwort ein realistisches Maß übersteigt.  
 - Auszug von http://distrochooser.de - "Über den Distrochooser"
