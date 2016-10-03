@@ -19,7 +19,7 @@ Aktuell befindet sich Bittorrent Sync zwar noch in der Entwicklungsphase, bietet
 ## Was benötige ich dafür?
 Mehr als den sehr günstigen Rechner [Raspberry Pi](/artikel/raspberry-pi-review/) mit einer großen Speicherkarte oder einer externen Festplatte sowie einen Internetanschluss benötigen Sie nicht.
 
-Laden Sie sich von [https://www.getsync.com/intl/de/platforms/desktop](https://www.getsync.com/intl/de/platforms/desktop) einmal den Client für **ARM-Linux** herunter (der dann später auf dem Raspberry Pi läuft) und den Client für Ihren PC.
+Laden Sie sich von [https://www.getsync.com/individuals/](https://www.getsync.com/individuals/) einmal den Client für **ARM-Linux** herunter (der dann später auf dem Raspberry Pi läuft) und den Client für Ihren PC.
 Entpacken Sie nun das Archiv mit dem Raspberry Pi - Download und kopieren Sie die Datei `btsync` (via SFTP) auf Ihren Raspberry Pi.
 
 ## Einrichtung
