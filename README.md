@@ -1,4 +1,4 @@
-# menzerath.eu
+# blog.marvin-menzerath.de
 Mein Technikblog - powered by Hugo. Tutorials & Reviews zur Technikwelt.
 
 ==> **[Klick](https://blog.marvin-menzerath.de)** <==
