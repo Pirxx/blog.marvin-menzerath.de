@@ -69,7 +69,7 @@ p, ul, ol, dl {
 }
 
 ol ol, ul ul, ul ol, ol ul {
-	margin: 0.4em 0;
+	margin: 0;
 }
 
 hr {
