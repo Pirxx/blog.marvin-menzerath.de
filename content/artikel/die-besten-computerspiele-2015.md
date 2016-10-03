@@ -18,7 +18,7 @@ Leider hat mir persönlich das Ende der ersten Staffel nicht wirklich gefallen -
 Momentan kosten alle 5 Episoden bei Steam rund 20€; im Sale wird man wohl rund 10€ bis 15€ zahlen müssen.
 
 ## Cities: Skylines, 10.03.2015
-Die Ambitionen von [Cities: Skylines](http://store.steampowered.com/app/255710/) waren groß: man wollte all das richtig machen, was EA in [SimCity](https://menzerath.eu/artikel/staedtesimulation-simcity-5-im-test/) falsch gemacht hatte. Und das hat auch gut geklappt: die Karten sind sehr groß geraten (weitere Abschnitte lassen sich einfach freischalten) und auch die Verkehrssimulation hat nicht ab einer bestimmten Größe der Stadt für einen kompletten Stillstand des Verkehrs gesorgt.
+Die Ambitionen von [Cities: Skylines](http://store.steampowered.com/app/255710/) waren groß: man wollte all das richtig machen, was EA in [SimCity](/artikel/staedtesimulation-simcity-5-im-test/) falsch gemacht hatte. Und das hat auch gut geklappt: die Karten sind sehr groß geraten (weitere Abschnitte lassen sich einfach freischalten) und auch die Verkehrssimulation hat nicht ab einer bestimmten Größe der Stadt für einen kompletten Stillstand des Verkehrs gesorgt.
 Das optionale DLC "After Dark" verbessert weiterhin den kürzlich eingeführten Nacht-Modus und bietet z.B. mehr Arbeits- und Vergnügungsmöglichkeiten für die Einwohner der Stadt.
 
 Die Grundversion kostet ca. 28€ und im Sale kann man mit einem Preis von rund 20€ rechnen.

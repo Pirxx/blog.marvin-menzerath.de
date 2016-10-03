@@ -58,7 +58,6 @@ Nun müssen Sie noch das gesamte Script nach Ihren Wünschen anpassen und an ein
 	 * Anti-DDoS Script
 	 * Version 1.1.1
 	 * (c) 2012-2013: Marvin Menzerath
-	 * http://menzerath.eu
 	 *
 ****/
 

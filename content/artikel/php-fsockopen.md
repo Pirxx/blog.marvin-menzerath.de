@@ -20,7 +20,7 @@ In den folgenden Beispielen sehen Sie zwei Funktionen mit denen Sie einfach Date
 Hier wird der Funktion `getShortURL($url);` eine URL mitgegeben, die dann durch die API des Short-URL Dienstes is.gd eine kurze URL generiert und diese dann zurück gibt.
 ```php
 <?php
-	// Aufruf mit >>echo getShortUrl("http://menzerath.eu");<<
+	// Aufruf mit >>echo getShortUrl("http://meine-adresse.de");<<
 	function getShortURL($url) {
 		$fp = @fsockopen("is.gd", "80", $errno, $errstr, 10);
 

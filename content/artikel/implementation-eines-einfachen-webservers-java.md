@@ -70,7 +70,7 @@ Beim Senden einer Fehler-Seite ist zu beachten, dass keine Datei eingelesen werd
 ## Literaturverzeichnis
 * Ullenboom, Christian: Java ist auch eine Insel. 9. Auflage 2011  
 [http://openbook.galileocomputing.de/javainsel9/](http://openbook.galileocomputing.de/javainsel9/), 22.12.2013
-* siehe [Teil 1 der Facharbeit](http://menzerath.eu/artikel/wie-funktioniert-das-http-protokoll/)
+* siehe [Teil 1 der Facharbeit](/artikel/wie-funktioniert-das-http-protokoll/)
 
 [^1]: Vgl. Ullenboom, Christian: Java ist auch eine Insel, Abschnitt „21. Netzwerkprogrammierung“
 [^2]: Farblich markierte Codefragmente

@@ -78,10 +78,10 @@ Somit wird klar, warum Eingangs von einem "Protokollstapel" und einem "Anwendung
 Damit ein Client (im Folgenden wird von einem typischen Webbrowser ausgegangen) Daten von einem Server empfangen kann, muss dieser zuerst eine TCP-Verbindung zum Server herstellen und anschließend seine Anfrage ("Request") formulieren.
 
 #### 2.3.1 Aufbau eines Request-Headers
-Eine Anfrage ist eine einfach aufgebaute Text-Meldung, die mehrere Informationen für den Server enthält, welche am folgenden (gekürzten) Beispiel deutlich werden. Der Anwender hat dabei mit dem Google Chrome Webbrowser die URL [http://menzerath.eu/artikel/einfuehrung-versionsverwaltung-git-github/](http://menzerath.eu/artikel/einfuehrung-versionsverwaltung-git-github/) aufgerufen und damit den Versand der folgenden Nachricht an den Server ausgelöst:
+Eine Anfrage ist eine einfach aufgebaute Text-Meldung, die mehrere Informationen für den Server enthält, welche am folgenden (gekürzten) Beispiel deutlich werden. Der Anwender hat dabei mit dem Google Chrome Webbrowser die URL [http://blog.marvin-menzerath.de/artikel/einfuehrung-versionsverwaltung-git-github/](/artikel/einfuehrung-versionsverwaltung-git-github/) aufgerufen und damit den Versand der folgenden Nachricht an den Server ausgelöst:
 ```
 GET /artikel/einfuehrung-versionsverwaltung-git-github/ HTTP/1.1
-Host: menzerath.eu
+Host: blog.marvin-menzerath.de
 Connection: keep-alive
 Accept: text/html
 User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) Chrome/33.0.1750.117
@@ -99,7 +99,7 @@ Um nun beispielsweise Daten eines Formulars an den Server zu übermitteln, wird 
 GET /formular.php HTTP/1.1
 POST /formular.php HTTP/1.1
 ```
-lauten, damit der Server die Daten richtig verwenden, bzw. für einen PHP-Interpreter[^19] verfügbar machen kann. Diese Daten werden dann im folgenden Format aufgelistet: 
+lauten, damit der Server die Daten richtig verwenden, bzw. für einen PHP-Interpreter[^19] verfügbar machen kann. Diese Daten werden dann im folgenden Format aufgelistet:
 ```
 vorname=Marvin&nachname=Menzerath
 ```
@@ -119,7 +119,7 @@ Server: Apache/2.2.22 (Debian)
 Content-Length: 9660
 Connection: Keep-Alive
 Content-Type: text/html; charset=UTF-8
- 
+
 [...]
 ```
 
@@ -184,5 +184,5 @@ Aktuell wird außerdem bei den größten Technikkonzernen weltweit an der Versio
 [^22]: Auch "Internet Media Type" (MIME-Type) genannt: gibt den Datentyp der im Daten-Teil der Nachricht versendeten Daten an (z.B.: Text, Bild, Video, ...)
 [^23]: 8-Bit Universal Character Set Transformation Format: eine oft genutzte Zeichenkodierung
 [^24]: Internet Engineering Task Force: Organisation, die Internetstandards festlegt
-[^25]: Auswahl basiert unter anderem auf den 12 am häufigsten durch den Webserver versendeten Status-Codes im Dezember 2013 auf [http://menzerath.eu](http://menzerath.eu).
+[^25]: Auswahl basiert unter anderem auf den 12 am häufigsten durch den Webserver versendeten Status-Codes im Dezember 2013 auf [https://blog.marvin-menzerath.de](https://blog.marvin-menzerath.de).
 [^26]: Vgl. Schnabel, Patrick: HTTP - Hypertext Transfer Protocol, Abschnitt "HTTP-Response-Codes / HTTP-Status-Codes"

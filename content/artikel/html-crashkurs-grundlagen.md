@@ -158,7 +158,7 @@ Bei diesem Beispiel-Link wird beim Klick auf den Text "Klick mich!" zur URL "mei
 Mit Bildern wird vieles anschaulicher und einfacher zu verstehen. Und der Bilder-Tag `img` ist ebenfalls in seiner Grundform sehr einfach.
 ```markup
 <img src="pfad/oder/url/zum/bild.png" alt="Tolles Bild"/>
-<a href="http://menzerath.eu"><img src="logo.png" /></a>
+<a href="http://meine-adresse.de"><img src="logo.png" /></a>
 ```
 ![HTML-Tutorial: Bilder](/images/html-crashkurs-grundlagen/Bilder.png)
 
@@ -200,7 +200,7 @@ Nun haben Sie schon eine Menge gelernt und können damit **aus dem Grundgerüst 
 		</section>
 	</article>
 	<footer>
-		<p>(c) 2013: <a href="http://menzerath.eu">Marvin Menzerath</a></p>
+		<p>(c) 2013: <a href="http://meine-adresse.de">Ich</a></p>
 	</footer>
 </body>
 </html>

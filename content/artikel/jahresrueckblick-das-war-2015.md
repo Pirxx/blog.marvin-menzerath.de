@@ -20,7 +20,7 @@ Immer wieder im Laufe des Jahres haben sich kleine Dinge am Blog verändert, die
 Statt Ghost, WordPress oder einem ähnlichen CMS verwendet dieser Blog nun [Hugo](https://github.com/spf13/hugo), einen statischen Seiten-Generator für Blogs.
 Dadurch kann der Webserver die fertigen Seiten direkt ausliefern und muss auf kein dahinterliegendes CMS oder eine Datenbank warten.
 
-Seit dem Umstieg ist der Blog in "Rohform" auch in einem [eigenen GitHub-Repository](https://github.com/MarvinMenzerath/menzerath.eu) zu finden. Daher finden Sie auch unter jedem Artikel die Möglichkeit, dort Fehler zu melden oder selbst zu beheben - einen GitHub-Account vorausgesetzt.
+Seit dem Umstieg ist der Blog in "Rohform" auch in einem [eigenen GitHub-Repository](https://github.com/MarvinMenzerath/blog.marvin-menzerath.de) zu finden. Daher finden Sie auch unter jedem Artikel die Möglichkeit, dort Fehler zu melden oder selbst zu beheben - einen GitHub-Account vorausgesetzt.
 
 Technisch funktioniert das ganze folgendermaßen: Der ganze Blog wird via Git verwaltet - nach einer Änderung wird diese committed und ins GitHub-Repository gepusht. Daraufhin benachrichtigt GitHub meinen Uberspace, der das Repository lokal klont und mit Hugo anschließend den Blog baut und in das entsprechende Verzeichnis des Webservers kopiert.
 
@@ -33,7 +33,7 @@ Ebenfalls weggefallen ist der Kommentarbereich unter den Artikeln. Dies hat mehr
 Um den Wegfall der Kommentare ein wenig auszugleichen, habe ich hilfreiche Kommentare und öfter aufgetauchte Fragen in die Artikel übernommen.
 
 #### Benachrichtigungskanäle
-Neben Facebook, Twitter und dem RSS-Feed biete ich seit kurzem auch einen [Telegram-Channel](https://telegram.me/menzerath_eu) an, in welchem automatisch neue Artikel veröffentlicht werden.
+Neben Facebook, Twitter und dem RSS-Feed biete ich seit kurzem auch einen [Telegram-Channel](https://telegram.me/marvinmenzerath_blog) an, in welchem automatisch neue Artikel veröffentlicht werden.
 
 ### Statistiken
 Da die meisten Menschen Statistiken und Diagramme mögen, möchte ich auch an dieser Stelle ein paar Kernmetriken aus Piwik vorstellen.
