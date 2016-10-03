@@ -1,8 +1,8 @@
 +++
 title       = "In eigener Sache: Wechsel der Blog-URL"
 description = "Dieser Blog ist von https://menzerath.eu auf https://blog.marvin-menzerath.de umgezogen. Was sich damit ändert und was gleich bleibt, lesen Sie hier."
-date        = "2016-10-03T18:00:00"
-lastmod     = "2016-10-03T18:00:00"
+date        = "2016-10-03T17:25:00"
+lastmod     = "2016-10-03T17:25:00"
 tag         = ["Offtopic"]
 +++
 
