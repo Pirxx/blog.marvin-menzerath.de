@@ -24,8 +24,5 @@ _paq.push(['enableLinkTracking']);
 $(document).ready(function() {
 	Prism.highlightAll();
 	$(".post-content").fitVids();
-	(adsbygoogle = window.adsbygoogle || []).push({
-		google_ad_client: "ca-pub-6504525296993604",
-		enable_page_level_ads: true
-	});
+	(adsbygoogle = window.adsbygoogle || []).push({});
 });
