@@ -10,7 +10,7 @@ canonifyUrls    = true
 	author      = "Marvin Menzerath"
 	impress     = "/impressum/"
 	datenschutz = "/datenschutzerklaerung/"
-	githubRepo  = "https://github.com/MarvinMenzerath/menzerath.eu/"
+	githubRepo  = "https://github.com/MarvinMenzerath/blog.marvin-menzerath.de/"
 
 [taxonomies]
 	tag = "tag"
