@@ -14,7 +14,7 @@ Branderweg 21
 
 ## Kontakt:
 Telefon: 02472 9182864
-E-Mail:	`info [at] menzerath.eu`
+E-Mail:	`blog [at] marvin-menzerath.de`
 
 ## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
 Marvin Menzerath
