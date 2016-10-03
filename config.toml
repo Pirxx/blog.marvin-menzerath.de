@@ -1,4 +1,4 @@
-baseurl         = "https://menzerath.eu/"
+baseurl         = "https://blog.marvin-menzerath.de/"
 languageCode    = "de-DE"
 title           = "Marvin Menzerath"
 theme           = "marvinmenzerath"
