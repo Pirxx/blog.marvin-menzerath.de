@@ -1,6 +1,6 @@
 +++
 title       = "Einsteiger-NAS Synology DS215j im Test"
-description = "Die Synology DiskStation 215j ist f\u00fcr 160\u20ac ein g\u00fcnstiges und funktionsstarkes NAS. Es kann als Dateispeicher, Mediencenter und vielem mehr verwendet werden."
+description = "Die Synology DiskStation 215j ist für 160€ ein günstiges und funktionsstarkes NAS. Es kann als Dateispeicher, Mediencenter und vielem mehr verwendet werden."
 date        = "2015-07-11T13:45:00"
 tag         = ["NAS", "Review"]
 +++

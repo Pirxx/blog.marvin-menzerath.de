@@ -1,6 +1,6 @@
 +++
 title       = "Einfache Android ActionBar Programmieren"
-description = "Mit dieser einfachen ActionBar kann jede Android-App auch unter \u00e4lteren Versionen gut aussehen und komfortabel genutzt werden."
+description = "Mit dieser einfachen ActionBar kann jede Android-App auch unter älteren Versionen gut aussehen und komfortabel genutzt werden."
 date        = "2012-05-05T21:00:00"
 tag         = ["Android", "Programmierung"]
 +++
